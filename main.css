@@ -980,3 +980,79 @@ body{
   .xp-card, .edu-card{ padding: .9rem 1rem; }
 }
 
+/* =========================
+   MOBILE RESPONSIVE PATCH
+   ========================= */
+
+/* -------- Tablet (≤ 980px) -------- */
+@media (max-width: 980px){
+
+  /* Comfortable side gutters */
+  .container{ padding-left: 1rem; padding-right: 1rem; }
+
+  /* Section bar (was fixed 1200px and caused sideways scrolling) */
+  .section__title::before{ width: 100%; }
+
+  /* Hero stacks */
+  .hero{ grid-template-columns: 1fr; gap: 1.25rem; padding: 3.25rem 0 2rem; }
+  .hero__cta{ justify-content: center; }
+
+  /* Projects grid goes single column */
+  .proj-grid{ grid-template-columns: 1fr; }
+
+  /* Skills graph + controls don’t push outside the viewport */
+  .skills-graph,
+  .graph-toolbar,
+  .graph-actions{ margin-left: 0; margin-right: 0; }
+  .graph-note{ margin: .5rem 0 0; }
+}
+
+/* -------- Phones (≤ 680px) -------- */
+@media (max-width: 680px){
+
+  /* Safety: prevent any stray wide element from creating horizontal scroll */
+  html, body{ overflow-x: hidden; }
+
+  /* Headings & taglines scale down a bit */
+  #about .section__title,
+  #projects .section__title,
+  #skills .section__title,
+  #experience .section__title,
+  #education .section__title,
+  #contact .section__title{ font-size: 2.15rem; letter-spacing: .5px; }
+
+  #about .section__tagline,
+  #projects .section__tagline,
+  #skills .section__tagline,
+  #experience .section__tagline,
+  #education .section__tagline,
+  #contact .section__tagline{
+    font-size: .76rem; letter-spacing: 1.6px; margin-left: 0;
+  }
+
+  /* Project cards: reduce very tall thumbnails on phones */
+  .proj-thumb{ height: clamp(220px, 62vw, 360px); }
+  .proj-tags li{ font-size: .78rem; }
+
+  /* Timeline readability */
+  .timeline{ padding-left: .85rem; border-left-width: 1.5px; }
+  .tl-dot{ left: -12px; }
+  .xp-head h3{ font-size: 1rem; }
+  .xp-meta{ font-size: .85rem; }
+  .chip-list li{ font-size: .78rem; }
+
+  /* Section spacing tighter on phones */
+  .section{ padding: 3.5rem 0 2.25rem; }
+
+  /* Pill button sizing */
+  #projects .actions .btn-pill{ padding: .6rem 1.1rem; }
+}
+
+/* -------- Small phones (≤ 480px) -------- */
+@media (max-width: 480px){
+  .hero__title{ font-size: clamp(1.8rem, 7vw, 2.4rem); }
+  .hero__subtitle{ font-size: .95rem; }
+  .proj-thumb{ height: clamp(210px, 70vw, 340px); }
+  .btn{ padding: .6rem .9rem; } /* thumb-friendly controls */
+}
+
