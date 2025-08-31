@@ -201,42 +201,6 @@ body{
   font-style: italic;
 }
 
-/* TITLE BACKGROUND PAINTED IMAGE BASE */
-.highlight.painted{
-  position: relative;
-  background: none !important;
-  padding: 0 .28em .12em;   /* a little room around the text */
-}
-
-/* the stroke image */
-.highlight.painted .paint-img{
-  position: absolute;
-  z-index: -1;
-  pointer-events: none;
-  left: -.34em;
-  right: -.36em;
-  top:  .36em;        /* ↓ we’ll override these in the center variant */
-  bottom: -.10em;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;   /* stretches to span size; use 'cover' to keep aspect */
-  object-position: center;
-  mix-blend-mode: multiply;
-  transform: rotate(-0.2deg);
-}
-
-/* center the stroke behind the text */
-.highlight.painted.paint--center .paint-img{
-  top: .12em;         /* move UP (smaller value = higher) */
-  bottom: -.28em;     /* make it taller under the text */
-  transform: rotate(-0.2deg);
-}
-
-/* quick variants if you want finer control */
-.highlight.painted.paint--higher .paint-img{ top: .08em; bottom: -.26em; }
-.highlight.painted.paint--lower  .paint-img{ top: .18em; bottom: -.22em; }
-
-
 .hero__subtitle{
     max-width:90ch;
     color:#514f4c;
@@ -925,4 +889,94 @@ body{
 }
 
 
+/* ===================== Responsive tuning ===================== */
+
+/* Tablet and down (<= 980px) */
+@media (max-width: 980px){
+  .section { padding: 4.5rem 0 3rem; }
+
+  /* section titles + underline bar */
+  #about .section__title,
+  #projects .section__title,
+  #skills .section__title,
+  #experience .section__title,
+  #education .section__title,
+  #contact .section__title { font-size: 2.6rem; }
+  .section__title::before { width: 100%; }
+
+  /* About */
+  .about__grid{ grid-template-columns: 1fr; gap: 1.25rem; }
+  .about__img{ max-width: 100%; height: auto; }
+
+  /* Projects */
+  .proj-grid{ grid-template-columns: 1fr; }
+
+  /* Skills area margins */
+  .skills-graph,
+  .graph-toolbar,
+  .graph-actions{ margin-left: 0; margin-right: 0; }
+}
+
+/* Phones (<= 680px) */
+@media (max-width: 680px){
+  /* comfy side padding on small screens */
+  .container{ padding-left: 1rem; padding-right: 1rem; }
+
+  /* Hero */
+  .hero{ grid-template-columns: 1fr; gap: 1rem; padding: 3.25rem 0 2rem; }
+  .hero__title{ font-size: clamp(1.8rem, 7vw, 2.4rem); }
+  .hero__subtitle{ font-size: .98rem; }
+  .hero__cta{ justify-content: center; }
+  .hero__art{ margin-top: .5rem; }
+  .hero__caption{ font-size: 1.4rem; }
+
+  /* Headings + taglines */
+  #about .section__title,
+  #projects .section__title,
+  #skills .section__title,
+  #experience .section__title,
+  #education .section__title,
+  #contact .section__title{ font-size: 2.15rem; letter-spacing: .5px; }
+  #about .section__tagline,
+  #projects .section__tagline,
+  #skills .section__tagline,
+  #experience .section__tagline,
+  #education .section__tagline,
+  #contact .section__tagline{ font-size: .76rem; margin-top: 0; margin-left: 0; letter-spacing: 1.6px; }
+
+  /* About copy */
+  .about__img{ width: 100%; height: auto; }
+  .about__copy p{ font-size: .95rem; }
+
+  /* Project cards */
+  .proj-thumb{ height: clamp(220px, 62vw, 380px); }
+  .proj-tags li{ font-size: .78rem; }
+
+  /* Skills graph */
+  .skills-graph{ height: 60vh; }
+  .graph-toolbar{ gap: .75rem; }
+  .graph-note{ margin: .5rem 0 0; }
+
+  /* Timeline (Experience) */
+  .timeline{ padding-left: .85rem; border-left-width: 1.5px; }
+  .tl-dot{ left: -12px; top: 22px; }
+  .xp-head h3{ font-size: 1rem; }
+  .xp-meta{ font-size: .85rem; }
+  .chip-list li{ font-size: .78rem; }
+
+  /* Timeline (Education) */
+  #education .timeline{ padding-left: .85rem; border-left-width: 1.5px; }
+  #education .tl-dot{ left: -12px; top: 22px; }
+}
+
+/* Small phones (<= 480px) */
+@media (max-width: 480px){
+  .section{ padding: 3.5rem 0 2.25rem; }
+  .hero__subtitle,
+  .about__copy p{ text-align: left; } /* reduce edge-to-edge justification */
+  .btn{ padding: .6rem .9rem; }       /* thumb-friendly buttons */
+
+  .proj-thumb{ height: clamp(230px, 68vw, 360px); }
+  .xp-card, .edu-card{ padding: .9rem 1rem; }
+}
 
