@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+
+
+
+
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a class="brand" href="#hero">Purva's Portfolio</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero container" id="hero">
+    <div class="hero__copy">
+      
+    <h1 class="hero__title reveal">Understanding the <br/>mind 
+         <span class="highlight painted paint--center">
+    through patterns
+    <img src="assets/strokes/paintstroke.png" alt="" class="paint-img" aria-hidden="true">
+  </span>
+    </h1>
+      <p class="hero__subtitle reveal">
+       Hey there! I’m a Data Analyst who’s crunched everything from <strong>65K+ public health requests</strong> to <strong>200K+ medical equipment records</strong>—building dashboards that improved interventions by <strong>25%</strong>, reduced stockouts by <strong>20%</strong>, and boosted awareness campaigns by 30%. Whether <strong>mapping syringe hotspots in Boston</strong>, designing advocacy visuals on child welfare, or creating tools that make travel safer and less stressful, I <strong>connect numbers with human stories</strong> to support equity and mental well-being.
+      </p>
+      <div class="hero__cta reveal">
+        <a class="btn" href="#work">View Projects</a>
+        <a class="btn btn--ghost" href="PurvaKekan-Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+      </div>
+      <!--<ul class="hero__badges reveal">
+        <li>Power BI & Tableau</li>
+        <li>SQL & Python</li>
+        <li>Geospatial (ArcGIS)</li>
+        <li>NLP for Behavior Insights</li>
+      </ul>-->
+    </div>
+    <div class="hero__art reveal">
+        <img src="images/profilepic.jpg" alt="Purva Kekan" class="hero__img" />
+        <p class="hero__caption">DATA ANALYST<br />
+        </p>
+         <!-- Social icons -->
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/purva-prakash-kekan" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/purva-kekan" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:kekan.p@northeastern.edu" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about container section" id="about">
+    <div class="section__head">
+      <h2 class="section__title reveal">About Me</h2>
+      <p class="section__tagline reveal">When analytics meet human insights</p>
+    </div>
+    <div class="about__grid">
+        <img src="images/personalphoto6.jpg" alt="Purva Kekan working on her laptop" class="about__img reveal" />
+      
+      <div class="about__copy reveal">
+        <p>
+          My journey into data analytics began with a simple belief: <strong>numbers should serve people</strong>, not the other way around. Over the past three years, I've had the privilege of working with organizations where data directly impacts human lives—from analyzing <strong>1M+ child protective services records</strong> at KARA to help flag high-risk situations, to processing <strong>65K+ public health service requests</strong> in Boston to ensure underserved communities receive the care they need. At IpserLab, I'm currently building analytics for an AI travel platform that prioritizes <strong>mental health and safety</strong> for vulnerable travelers, creating dashboards that monitor inclusivity and help reduce travel anxiety for women, LGBTQ+ individuals, and solo adventurers.
+       </p>
+        <p>
+          What drives me most is discovering the human story hidden within the data. Whether I'm using <strong>SARIMA forecasting</strong> to predict healthcare demand patterns, building <strong>Power BI dashboards with geospatial mapping</strong> to identify community health gaps, or developing <strong>predictive models with 90% accuracy</strong> to prevent medical supply shortages, I'm constantly asking: how can this insight make someone's day better, safer, or healthier? My work has improved targeted interventions by <strong>25-40%</strong> across multiple organizations, but the real reward comes from knowing that behind every percentage point improvement, there are real people receiving better care, feeling safer, or finding the support they need when they need it most.
+       </p>
+        <a class="btn btn--pill" href="#contact">Let’s connect</a>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-------------------------------------------------------------------------------- Projects ----------------------------------------------------------------------------------------------------------------------->
+<!-- PROJECTS -->
+<section class="section container" id="projects">
+  <div class="section__head">
+    <h2 class="section__title">What I've Built</h2>
+    <p class="section__tagline">Understanding the data through patterns</p>
+  </div>
+
+  <div class="proj-grid">
+
+    <!-- 4. Atomic Habits: Semantic Mapping -->
+    <article class="proj-card">
+      <a class="proj-thumb" href="https://github.com/purva-kekan/NLP-Analysis-Atomic-Habits" target="_blank" rel="noopener">
+        <img src="images/ap1.jpeg" alt="Atomic Habits: Semantic Mapping" />
+        <span class="proj-open" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-8 8"/><path d="M5 11v10h10"/></svg>
+        </span>
+      
+      <div class="proj-overlay">
+        <p class="proj-desc">
+          Developed an NLP-powered Streamlit app analyzing Atomic Habits using sentiment analysis, keyword extraction, and concept mapping as well as adding a semantic search engine and interactive graph with FAISS and pyvis.
+        </p>
+        <ul class="proj-tags">
+          <li>Python</li><li>TF-IDF</li><li>PyVis</li><li>NetworkX</li>
+        </ul>
+      </div>
+      </a>
+    </article>
+
+    <!-- 2. Boston 311 Syringe Requests -->
+    <article class="proj-card">
+      <a class="proj-thumb" href="https://github.com/purva-kekan/Healthcare-Analytics-Boston-Syringe-Request" target="_blank" rel="noopener">
+        <img src="images/ap2.jpeg" alt="Boston 311 Syringe Requests" />
+        <span class="proj-open" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-8 8"/><path d="M5 11v10h10"/></svg>
+        </span>
+      
+      <div class="proj-overlay">
+        <p class="proj-desc">
+          Developed a Power BI dashboard on the Boston 311 Syringe Requests data, using geospatial analysis, predictive analytics through Python and seasonal trend analysis to uncover the patterns in demands of syringe requests, allocating resources optimally and SLA compliance
+        </p>
+        <ul class="proj-tags">
+          <li>Power BI</li><li>ArcGIS</li><li>API</li>
+        </ul>
+      </div>
+      </a>
+    </article>
+
+    <!-- 1. Supply Chain & Billing Reconciliation -->
+    <article class="proj-card">
+      <a class="proj-thumb" href="https://github.com/purva-kekan/Supply-Chain-Optimization-Dashboard" target="_blank" rel="noopener">
+        <img src="images/ap3.jpeg" alt="Supply Chain & Billing Reconciliation" />
+        <span class="proj-open" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-8 8"/><path d="M5 11v10h10"/></svg>
+        </span>
+      <div class="proj-overlay">
+        <p class="proj-desc">
+          Built Power BI dashboard analyzing 180K+ records to track orders, inventory, and delivery trends across multiple regions, improving fulfillment KPIs by 30% and reduced delivery delays by 25% using custom DAX metrics and Power Query transformations
+        </p>
+        <ul class="proj-tags">
+          <li>Power BI</li><li>DAX</li><li>Power Query</li>
+        </ul>
+      </div>
+       </a>
+    </article>
+
+    <!-- 4. KARA Child Abuse -->
+    <article class="proj-card">
+      <a class="proj-thumb" href="#" target="_blank" rel="noopener">
+        <img src="images/ap4.jpeg" alt="KARA child abuse" />
+        <span class="proj-open" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-8 8"/><path d="M5 11v10h10"/></svg>
+        </span>
+     
+      <div class="proj-overlay">
+        <p class="proj-desc">
+          Built visuals for "Americas children in 100 charts" book and improved national child welfare reporting by 40%, enabling 35% stronger policy advocacy through integrated data systems
+        </p>
+        <ul class="proj-tags">
+          <li>Power BI</li><li>Python</li><li>Excel</li>
+        </ul>
+      </div>
+       </a>
+    </article>
+
+    <!-- 5. NFL Playtype Predictive Analytics -->
+<article class="proj-card is-hidden">
+  <a class="proj-thumb" href="https://github.com/purva-kekan/Supply-Chain-Optimization-Dashboard" target="_blank" rel="noopener">
+    <img src="images/ap5.jpeg" alt="NFL Playtype Predictive Analytics" />
+    <span class="proj-open" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-8 8"/><path d="M5 11v10h10"/></svg>
+    </span>
+    <div class="proj-overlay">
+      <p class="proj-desc">Designed Machine Learning models to forecast KPIs based on historical performance metrics, validating outcomes using cross-validation and improved model precision, achieving 92% accuracy in predicting future trends across multiple datasets
+</p>
+      <ul class="proj-tags">
+        <li>Python</li><li>Power BI</li>
+      </ul>
+    </div>
+  </a>
+</article>
+
+<!-- 6. Campaign ROI and engagement -->
+<article class="proj-card is-hidden">
+  <a class="proj-thumb" href="https://github.com/purva-kekan/Social-Media-Advertising-Performance-Dashboard" target="_blank" rel="noopener">
+    <img src="images/ap6.jpeg" alt="Campaign ROI and Engagement" />
+    <span class="proj-open" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-8 8"/><path d="M5 11v10h10"/></svg>
+    </span>
+    <div class="proj-overlay">
+      <p class="proj-desc">Built a Social Media Advertising Performance Dashboard using Power BI to help marketing and advertising teams track paid campaign performance across multiple platforms and companies.</p>
+      <ul class="proj-tags">
+        <li>Python</li><li>Power BI</li>
+      </ul>
+    </div>
+  </a>
+</article>
+
+<!-- 5. Global Energy Trend Analysis -->
+<article class="proj-card is-hidden">
+  <a class="proj-thumb" href="https://public.tableau.com/app/profile/purva.kekan/viz/GlobalEnergyTrendAnalysisYear1990-2020/RegionDashboard" target="_blank" rel="noopener">
+    <img src="images/ap7.jpeg" alt="Global Energy Trend Analysis" />
+    <span class="proj-open" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-8 8"/><path d="M5 11v10h10"/></svg>
+    </span>
+    <div class="proj-overlay">
+      <p class="proj-desc">Explored global time-series patterns using statistical and visual analytics, extracting actionable insights from longitudinal data spanning multiple markets and enhancing executive decision-making accuracy by 28% through predictive indicators</p>
+      <ul class="proj-tags">
+        <li>Python</li><li>Power BI</li>
+      </ul>
+    </div>
+  </a>
+</article>
+
+<!-- 8. Enterprise Risk Management -->
+<article class="proj-card is-hidden">
+  <a class="proj-thumb" href="https://github.com/purva-kekan/Enterprise-Risk-Managment-Report" target="_blank" rel="noopener">
+    <img src="images/ap8.jpeg" alt="Enterprise Risk Management" />
+    <span class="proj-open" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-8 8"/><path d="M5 11v10h10"/></svg>
+    </span>
+    <div class="proj-overlay">
+      <p class="proj-desc">Assessed merger risks in the Oracle-Cerner merger including integration gaps and cybersecurity threats using SWOT and I&W analysis, delivering executive dashboards that supported risk mitigation strategies and improved strategic planning by 40%
+</p>
+      <ul class="proj-tags">
+        <li>Python</li><li>Power BI</li>
+      </ul>
+    </div>
+  </a>
+</article>
+
+<!-- 9. Text Mining Analysis -->
+<article class="proj-card is-hidden">
+  <a class="proj-thumb" href="https://github.com/purva-kekan/Text-Mining-Analysis" target="_blank" rel="noopener">
+    <img src="images/ap9.jpeg" alt="Text Mining Analysis" />
+    <span class="proj-open" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-8 8"/><path d="M5 11v10h10"/></svg>
+    </span>
+    <div class="proj-overlay">
+      <p class="proj-desc">Analyzed Dr. Martin Luther King’s “I Have a Dream” speech using NLP techniques like stemming, stopword removal, and Term-Document Matrix, identifying key word clusters and sentiment patterns, enhancing interpretability through word clouds and frequency plots</p>
+      <ul class="proj-tags">
+        <li>Python</li><li>Power BI</li>
+      </ul>
+    </div>
+  </a>
+</article>
+
+  </div>
+  <div class="section__foot">
+    <a href="#" id="loadMoreBtn" class="btn btn--pill">View All Projects</a>
+  </div>
+</section>
+
+
+<!------------------------------------------------------------------ Skills ----------------------------------------------------------------------------------->
+
+<section class="skills container section" id="skills">
+  <div class="section__head">
+    <h2 class="section__title">Skills</h2>
+    <p class="section__tagline">tools and methods</p>
+  </div>
+
+  <!-- toolbar -->
+  <div class="graph-toolbar">
+    <div class="graph-legend">
+      <span class="legend-dot legend-core legend-box"></span> Core
+      <span class="legend-dot legend-tech legend-box"></span> Technical
+      <span class="legend-dot legend-non legend-box"></span> Non-Technical
+    </div>
+    <div class="graph-actions">
+      <button class="btn btn--pill is-active" data-filter="all">All</button>
+      <button class="btn btn--pill" data-filter="technical">Technical</button>
+      <button class="btn btn--pill" data-filter="nontech">Non-Technical</button>
+      <!--<button class="btn btn--pill" data-filter="fit">Fit</button>-->
+    </div>
+  </div>
+
+  <!-- graph canvas -->
+  <div id="skillsGraph" class="skills-graph" role="img"
+       aria-label="Network graph of technical tools and non-technical methods."></div>
+
+  <p class="graph-note">Tip: drag to explore • scroll to zoom • click nodes to focus</p>
+</section>
+
+
+<!-------------------------------------------------------------- Work Experience ---------------------------------------------------------->
+<section class="experience container section" id="experience">
+  <div class="section__head">
+    <h2 class="section__title reveal">Work Experience</h2>
+    <p class="section__tagline reveal">Turning Patterns in Real-World Impact</p>
+  </div>
+
+  <ol class="timeline">
+    <!-- IpserLab -->
+    <li class="tl-item reveal">
+      <div class="tl-dot"></div>
+      <article class="xp-card">
+  
+        <header class="xp-head">
+          <h3>Product Data Analyst <span> @ IpserLab | Remote, USA</span></h3>
+          <span class="xp-meta">May 2025 – Present</span>
+        </header>
+        <ul class="xp-bullets">
+          <li>Designed Excel dashboards merging 10+ live data feeds to monitor traveler safety and inclusivity, refining 50% tracking efficiency</li>
+          <li>Built KPI measuring user trust and satisfaction, enabling 20% faster updates to tools supporting safe decision-making for at-risk groups</li>
+          <li>Handled analytics across 40+ tasks, improving 35% on-time completion, ensuring timely rollouts of safety and well-being initiatives</li>
+          <li>Led interdepartmental teams of analytics and engineering, to align data-driven strategies and strengthen public health during travel</li>
+        </ul>
+        <ul class="chip-list">
+         <li>Excel</li>•<li>Excel (Power Query/DAX)</li>•<li>SQL</li>•<li>Python</li>•<li>Jupyter</li>•<li>Git/GitHub</li>•<li>KPI design</li>•<li>A/B testing</li>•<li>Data storytelling</li>•<li>Behavior & text signals</li>•<li>Forecasting</li>
+        </ul>
+      </article>
+    </li>
+
+    <!-- Boston Public Health Commission -->
+    <li class="tl-item reveal">
+      <div class="tl-dot"></div>
+      <article class="xp-card">
+        <header class="xp-head">
+          <h3>Data Analyst - Healthcare<span> @ Boston Public Health Commission | Boston, MA</span></h3>
+          <span class="xp-meta">Jan 2025 - Mar 2025</span>
+        </header>
+        <ul class="xp-bullets">
+          <li>Processed 65K+ public health service records in SQL and Python, ensuring accurate SLA and compliance reporting for city services</li>
+          <li>Built Power BI dashboards with geospatial mapping to detect underserved communities improving 25% in targeted interventions</li>
+          <li>Applied SARIMA forecasting model to predict service demand and stabilize high-volume areas, supporting equitable resource allocation</li>
+
+        </ul>
+        <ul class="chip-list">
+          <li>ArcGIS</li>•<li>Power BI</li>•<li>SQL</li>•<li>Python</li>•<li>pandas</li>•<li>Geospatial analysis</li>•<li>Equity lens & access gaps</li>•<li>Targeted interventions</li>•<li>KPI design</li>
+        </ul>
+      </article>
+    </li>
+
+    <!-- Kids At Risk Action -->
+    <li class="tl-item reveal">
+      <div class="tl-dot"></div>
+      <article class="xp-card">
+        <header class="xp-head">
+          <h3>Data Analyst<span> @ Kids At Risk Action (KARA) | Boston, MA</span></h3>
+          <span class="xp-meta">Apr 2024 - Jun 2024</span>
+        </header>
+        <ul class="xp-bullets">
+          <li>Consolidated 1M+ child protective services case records to improve national child welfare reporting accuracy by 40%</li>
+          <li>Designed 30+ compliance and billing dashboards on maltreatment trends and fatalities, enabling advocacy and funding campaigns</li>
+          <li>Built predictive models to flag high-risk states, driving 30% more effective interventions and prevention measures</li>
+        </ul>
+        <ul class="chip-list">
+          <li>Python</li>•<li>pandas</li>•<li>scikit-learn</li>•<li>TF-IDF / NLP</li>•<li>SQL</li>•<li>Data mining</li>•<li>Risk scoring</li>•<li>Data storytelling</li>•<li>Public & mental health</li>
+        </ul>
+      </article>
+    </li>
+    
+    
+    <!-- HDFC Bank (keep concise) -->
+    <li class="tl-item reveal">
+      <div class="tl-dot"></div>
+      <article class="xp-card">
+        <header class="xp-head">
+          <h3>Risk Data Analyst <span> @ HDFC Bank | Mumbai, India</span></h3>
+          <span class="xp-meta">Jan 2023 - Jun 2023</span>
+        </header>
+        <ul class="xp-bullets">
+          <li>Analyzed 500K+ account records with real-time Tableau dashboards, reducing 50% review cycle time with secure regulatory standards</li>
+          <li>Automated 10+ reporting pipelines with SQL and dbt, cutting 30% latency and saving 6 hrs/week in manual billing & collection reports</li>
+          <li>Conducted A/B tests on 100K+ records, to identify 12% higher repayment segments, boosting revenue recovery strategies</li>
+
+        </ul>
+        <ul class="chip-list">
+          <li>SQL</li>•<li>Tableau</li>•<li>Power BI</li>•<li>Excel</li>•<li>dbt</li>•<li>Git/GitHub</li>•<li>Enterprise risk management</li>•<li>KPI design</li>•<li>A/B testing</li>•<li>Stakeholder communication</li>
+        </ul>
+      </article>
+    </li>
+
+    <!-- Acute Bioscience -->
+    <li class="tl-item reveal">
+      <div class="tl-dot"></div>
+      <article class="xp-card">
+        <header class="xp-head">
+          <h3>Data Analyst - Inventory Management<span> @ Acute Bioscience | Remote, India</span></h3>
+          <span class="xp-meta">Jul 2022 - Dec 2022</span>
+        </header>
+        <ul class="xp-bullets">
+          <li>Managed 200K+ medical equipment inventory records, improving billing and stock visibility with 25% more actionable insights</li>
+          <li>Developed R-based demand forecasting with 90% accuracy, ensuring timely restoration, reducing 20% stockouts on critical equipment</li>
+          <li>Automated SQL workflows for reporting and reconciliation, cutting 35% retrieval times and rising financial compliance with health regulations</li>
+        </ul>
+        <ul class="chip-list">
+          <li>R</li>•<li>Python</li>•<li>scikit-learn</li>•<li>statsmodels (SARIMA)</li>•<li>Excel</li>•<li>Jupyter</li>•<li>Demand forecasting (SARIMA)</li>•<li>Inventory optimization</li>•<li>Healthcare/pharma analytics</li>•<li>Compliance reporting</li>
+        </ul>
+      </article>
+    </li>
+  </ol>
+</section>
+
+<!-------------------------------------------------------------- Education ------------------------------------------------------------------>
+<section class="education container section" id="education">
+  <div class="section__head">
+    <h2 class="#education section__title reveal">Education</h2>
+    <p class="#education section__tagline reveal">Building the Foundations</p>
+  </div>
+
+  <ol class="timeline">
+    <!-- MASTERS -->
+    <li class="tl-item reveal">
+      <div class="tl-dot"></div>
+  <div class="edu-grid">
+    <article class="edu-card reveal">
+      <header class="edu-head">
+        <h3>Masters of Professional Studies in Analytics<br/><i> GPA: 3.93/4.0</i></h3>
+         
+        <span class="edu-meta">March 2025</span>
+      </header>
+      <span class="edu-notes">Northeastern University<br/> Boston, MA</span>
+      <br/>
+      <ul class="chip-list">
+        <i>Relevant Coursework:</i> <li>Healthcare/Pharma Analytics</li>•<li>Predictive Analytics</li>•<li>Big Data</li>•<li>Enterprise Risk Management</li>•<li>Data Mining</li>•<li>Data Warehouse and SQL</li>
+      </ul>
+      <ul class="chip-list">
+        <i>Awards:</i> <li>CPS Leaders & Scholars Award</li>
+      </ul>
+    </article>
+  </li>
+
+  <!-- BACHELORS -->
+    <li class="tl-item reveal">
+      <div class="tl-dot"></div>
+    <article class="edu-card reveal">
+      <header class="edu-head">
+        <h3>Bachelor of Science in Information Technology<br/><i> GPA: 3.7/4.0</i></h3>
+        <span class="edu-meta">May 2023</span>
+      </header>
+      <span class="edu-notes">Mumbai University<br/> Mumbai, India</span>
+      <br/>
+      <ul class="chip-list">
+        <i>Relevant Coursework:</i> <li>Database Management Systems</li>•<li>Project Management</li>•<li>Business Intelligence</li>•<li>Artificial Intelligence</li>•<li>Probability and Statistics</li>
+      </ul>
+    </article>
+    </li>
+</section>
+</ol>
+
+<!-------------------------------------------------------------- Contact ----------------------------------------------------------------------------------->
+  
+
+  <!-- CONTACT -->
+<section class="contact2 section container" id="contact">
+  <div class="section__head">
+    <h2 class="section__title">Let’s Collaborate</h2>
+    <p class="section__tagline">Open to connect and work together</p>
+  </div>
+
+    <!-- Right: 2/3 -->
+    <aside class="contact2-right">
+      <div class="contact2-card">
+        <ul class="contact2-socials">
+          <!-- Email -->
+          <li class="social-item">
+            <span class="c2-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" fill="none" stroke="currentColor" stroke-width="2"/>
+                <path d="M3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </span>
+            <div class="c2-details">
+              <span class="c2-label">Email</span>
+              <a href="mailto:kekan.p@northeastern.edu">kekan.p@northeastern.edu</a>
+            </div>
+          </li>
+
+          <!-- GitHub -->
+          <li class="social-item">
+            <span class="c2-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 .5A11.5 11.5 0 0 0 0 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6 0-.3 0-1 0-2-3.2.7-3.9-1.5-3.9-1.5-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.2 1.2a11.2 11.2 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.3.8 1.1.8 2.2 0 1.6 0 2.8 0 3.2 0 .3.2.7.8.6A11.5 11.5 0 0 0 24 12 11.5 11.5 0 0 0 12 .5z"
+                      fill="currentColor"/>
+              </svg>
+            </span>
+            <div class="c2-details">
+              <span class="c2-label">GitHub</span>
+              <a href="https://github.com/purva-kekan" target="_blank" rel="noopener">github.com/purva-kekan</a>
+            </div>
+          </li>
+
+          <!-- LinkedIn -->
+          <li class="social-item">
+            <span class="c2-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm4 7H6v8h2v-8zm-1-1.8a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4zM20 13.5c0-2.7-1.4-3.9-3.2-3.9-1.5 0-2.2.8-2.6 1.4v-1.2H12v8h2.2v-4.5c0-1.2.2-2.3 1.7-2.3 1.5 0 1.5 1.4 1.5 2.4V19H20v-5.5z"
+                      fill="currentColor"/>
+              </svg>
+            </span>
+            <div class="c2-details">
+              <span class="c2-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/purva-prakash-kekan" target="_blank" rel="noopener">linkedin.com/in/purva-prakash-kekan</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+
+
+  <button class="to-top" aria-label="Back to top" title="Back to top">↑</button>
+
+  <footer class="site-footer">
+  <div class="container footer__wrap">
+    <!-- Use the SAME brand class your navbar uses.
+         If your nav brand is .site-brand or .nav__brand, keep it here too. -->
+    <div class="footer__brand nav__brand">Purva Kekan</div>
+
+    <div class="footer__copy">© 2025 Purva Prakash Kekan. All rights reserved.</div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <link rel="stylesheet" href="https://unpkg.com/vis-network/styles/vis-network.min.css">
+  <script defer src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  
+  <script defer src="main.js"></script>
+</body>
+</html>
