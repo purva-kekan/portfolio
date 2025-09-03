@@ -133,100 +133,120 @@ form?.addEventListener('submit', () => {
     });
 
     // ---- Nodes (resume-based) ----
-    const nodes = new vis.DataSet([
-      // core
-      { id: 'skills', label: 'Skills', group: 'core', ...core },
+const nodes = new vis.DataSet([
+  // core
+  { id: 'skills', label: 'Skills', group: 'core', ...core },
 
-      // hubs
-      { id: 'technical', label: 'Technical', group: 'tech', ...hub(ACCENT) },
-      { id: 'nontech',   label: 'Non-Technical', group: 'non', ...hub(BRAND) },
+  // hubs
+  { id: 'technical', label: 'Technical', group: 'tech', ...hub(ACCENT) },
+  { id: 'nontech',   label: 'Non-Technical', group: 'non', ...hub(BRAND) },
 
-      // technical groups
-      { id: 'tg_bi',    label: 'BI & Visualization',   group: 'tech', ...hub(ACCENT) },
-      { id: 'tg_prog',  label: 'Programming & Data',   group: 'tech', ...hub(ACCENT) },
-      { id: 'tg_ml',    label: 'ML & Modeling',        group: 'tech', ...hub(ACCENT) },
-      { id: 'tg_graph', label: 'Network & Graph',      group: 'tech', ...hub(ACCENT) },
-      { id: 'tg_geo',   label: 'Geo & Mapping',        group: 'tech', ...hub(ACCENT) },
-      { id: 'tg_ops',   label: 'DataOps & Notebooks',  group: 'tech', ...hub(ACCENT) },
+  // technical groups
+  { id: 'tg_bi',    label: 'BI & Visualization',    group: 'tech', ...hub(ACCENT) },
+  { id: 'tg_prog',  label: 'Programming & Data',    group: 'tech', ...hub(ACCENT) },
+  { id: 'tg_ml',    label: 'ML & Modeling',         group: 'tech', ...hub(ACCENT) },
+  { id: 'tg_graph', label: 'Network & Graph',       group: 'tech', ...hub(ACCENT) },
+  { id: 'tg_geo',   label: 'Geo & Mapping',         group: 'tech', ...hub(ACCENT) },
+  { id: 'tg_ops',   label: 'DataOps & Automation',  group: 'tech', ...hub(ACCENT) },
 
-      // non-technical groups (methods / domain)
-      { id: 'ntg_course', label: 'Coursework & Methods', group: 'non', ...hub(BRAND) },
-      { id: 'ntg_health', label: 'Healthcare Domain',    group: 'non', ...hub(BRAND) },
-      { id: 'ntg_exp',    label: 'Experimentation',      group: 'non', ...hub(BRAND) },
-      { id: 'ntg_comm',   label: 'Communication',        group: 'non', ...hub(BRAND) },
-      { id: 'ntg_fore',   label: 'Forecasting',          group: 'non', ...hub(BRAND) },
+  // non-technical groups (methods / domain)
+  { id: 'ntg_course',   label: 'Coursework & Methods', group: 'non', ...hub(BRAND) },
+  { id: 'ntg_health',   label: 'Healthcare Domain',    group: 'non', ...hub(BRAND) },
+  { id: 'ntg_exp',      label: 'Experimentation',      group: 'non', ...hub(BRAND) },
+  { id: 'ntg_comm',     label: 'Communication',        group: 'non', ...hub(BRAND) },
+  { id: 'ntg_fore',     label: 'Forecasting',          group: 'non', ...hub(BRAND) },
+  { id: 'ntg_ana',      label: 'Analytics & Strategy', group: 'non', ...hub(BRAND) },
 
-      // technical leaves (tools / languages)
-      { id: 't_powerbi',   label: 'Power BI',                  group: 'tech', ...leaf() },
-      { id: 't_tableau',   label: 'Tableau',                   group: 'tech', ...leaf() },
-      { id: 't_excel',     label: 'Excel (Power Query, DAX)',  group: 'tech', ...leaf() },
+  // technical leaves (tools / languages/skills from resume)
+  { id: 't_powerbi',    label: 'Power BI',                group: 'tech', ...leaf() },
+  { id: 't_tableau',    label: 'Tableau',                 group: 'tech', ...leaf() },
+  { id: 't_arcgis',     label: 'ArcGIS',                  group: 'tech', ...leaf() },
+  { id: 't_excel',      label: 'Excel (Power Query, DAX)',group: 'tech', ...leaf() },
+  { id: 't_sql',        label: 'SQL',                     group: 'tech', ...leaf() },
+  { id: 't_postgres',   label: 'PostgreSQL',              group: 'tech', ...leaf() },
+  { id: 't_python',     label: 'Python',                  group: 'tech', ...leaf() },
+  { id: 't_r',          label: 'R',                       group: 'tech', ...leaf() },
+  { id: 't_fastapi',    label: 'FastAPI',                 group: 'tech', ...leaf() },
+  { id: 't_git',        label: 'Git/GitHub',              group: 'tech', ...leaf() },
+  { id: 't_dbt',        label: 'dbt',                     group: 'tech', ...leaf() },
+  { id: 't_airflow',    label: 'Airflow',                 group: 'tech', ...leaf() },
+  { id: 't_api',        label: 'API Integration',          group: 'tech', ...leaf() },
 
-      { id: 't_sql',       label: 'SQL (Postgres, MySQL)',     group: 'tech', ...leaf() },
-      { id: 't_python',    label: 'Python',                    group: 'tech', ...leaf() },
-      { id: 't_r',         label: 'R',                         group: 'tech', ...leaf() },
-      { id: 't_pyspark',   label: 'PySpark',                   group: 'tech', ...leaf() },
-      { id: 't_pandas',    label: 'pandas',                    group: 'tech', ...leaf() },
+  // network & graph
+  { id: 't_pyvis',      label: 'PyVis',                   group: 'tech', ...leaf() },
+  { id: 't_networkx',   label: 'NetworkX',                group: 'tech', ...leaf() },
 
-      { id: 't_sklearn',   label: 'scikit-learn',              group: 'tech', ...leaf() },
-      { id: 't_tensorflow',label: 'TensorFlow',                group: 'tech', ...leaf() },
+  // non-technical leaves (methods / domain / soft skills)
+  { id: 'c_bi',         label: 'Business Intelligence',          group: 'non', ...leaf() },
+  { id: 'c_datamining', label: 'Data Mining',                   group: 'non', ...leaf() },
+  { id: 'c_predict',    label: 'Predictive Analytics',           group: 'non', ...leaf() },
+  { id: 'c_erm',        label: 'Enterprise Risk Mgmt',           group: 'non', ...leaf() },
+  { id: 'c_reporting',  label: 'Reporting & Compliance',         group: 'non', ...leaf() },
+  { id: 'c_risk',       label: 'Risk Analysis & Mitigation',     group: 'non', ...leaf() },
+  { id: 'h_health',     label: 'Healthcare/Pharma Analytics',    group: 'non', ...leaf() },
+  { id: 'h_geo',        label: 'Geospatial analysis',            group: 'non', ...leaf() },
+  { id: 'e_ab',         label: 'A/B Testing',                    group: 'non', ...leaf() },
+  { id: 'e_kpi',        label: 'KPI Design',                     group: 'non', ...leaf() },
+  { id: 'f_sarima',     label: 'Demand Forecasting (SARIMA)',    group: 'non', ...leaf() },
+  { id: 'c_story',      label: 'Data Storytelling',              group: 'non', ...leaf() },
+  { id: 'a_trend',      label: 'Trend & Variance Analysis',      group: 'non', ...leaf() },
+  { id: 'a_validation', label: 'Data Validation',                group: 'non', ...leaf() },
+  { id: 'a_stakeholder',label: 'Stakeholder Communication',      group: 'non', ...leaf() },
+  { id: 'a_strategy',   label: 'Strategic Planning',             group: 'non', ...leaf() },
+  { id: 'a_automation', label: 'Process Automation',             group: 'non', ...leaf() },
+  { id: 'a_leadership', label: 'Team Leadership',                group: 'non', ...leaf() },
+  { id: 'a_project',    label: 'Project Management',             group: 'non', ...leaf() }
+]);
 
-      { id: 't_pyvis',     label: 'PyVis',                     group: 'tech', ...leaf() },
-      { id: 't_networkx',  label: 'NetworkX',                  group: 'tech', ...leaf() },
+// ---- Edges ----
+const E = (a, b, id) => ({ id, from: a, to: b });
+const edges = new vis.DataSet([
+  // hubs
+  E('skills', 'technical', 'e1'), E('skills', 'nontech', 'e2'),
 
-      { id: 't_arcgis',    label: 'ArcGIS',                    group: 'tech', ...leaf() },
+  // technical groups
+  E('technical', 'tg_bi', 'e3'), E('technical', 'tg_prog', 'e4'),
+  E('technical', 'tg_ml', 'e5'), E('technical', 'tg_graph', 'e6'),
+  E('technical', 'tg_geo', 'e7'), E('technical', 'tg_ops', 'e8'),
 
-      { id: 't_dbt',       label: 'dbt',                       group: 'tech', ...leaf() },
-      { id: 't_git',       label: 'Git/GitHub',                group: 'tech', ...leaf() },
-      { id: 't_jupyter',   label: 'Jupyter',                   group: 'tech', ...leaf() },
+  // non-technical groups
+  E('nontech', 'ntg_course', 'e9'), E('nontech', 'ntg_health', 'e10'),
+  E('nontech', 'ntg_exp', 'e11'), E('nontech', 'ntg_comm', 'e12'),
+  E('nontech', 'ntg_fore', 'e13'), E('nontech', 'ntg_ana', 'e14'),
 
-      // non-technical leaves (methods / domain)
-      { id: 'c_predict',    label: 'Predictive Analytics',          group: 'non', ...leaf() },
-      { id: 'c_datamining', label: 'Data Mining',                   group: 'non', ...leaf() },
-      { id: 'c_erm',        label: 'Enterprise Risk Mgmt',          group: 'non', ...leaf() },
+  // technical leaves
+  E('tg_bi', 't_powerbi', 'e15'), E('tg_bi', 't_tableau', 'e16'), E('tg_bi', 't_excel', 'e17'),
+  E('tg_prog', 't_sql', 'e18'), E('tg_prog', 't_postgres', 'e19'), E('tg_prog', 't_python', 'e20'), E('tg_prog', 't_r', 'e21'),
+  E('tg_ml', 'c_predict', 'e22'), // Predictive analytics as tool for modeling
+  E('tg_ml', 'e_ab', 'e23'),
+  E('tg_ml', 'f_sarima', 'e24'),
+  E('tg_ml', 'c_datamining', 'e25'),
+  E('tg_ops', 't_git', 'e26'), E('tg_ops', 't_airflow', 'e27'), E('tg_ops', 't_dbt', 'e28'),
+  E('tg_ops', 't_api', 'e29'),
+  E('tg_graph', 't_pyvis', 'e30'), E('tg_graph', 't_networkx', 'e31'),
+  E('tg_geo', 't_arcgis', 'e32'),
+  E('tg_prog', 't_fastapi', 'e33'),
 
-      { id: 'h_health',     label: 'Healthcare/Pharma Analytics',   group: 'non', ...leaf() },
-      { id: 'h_geo',        label: 'Geospatial analysis',           group: 'non', ...leaf() },
+  // non-technical leaves
+  E('ntg_course', 'c_bi', 'e34'),
+  E('ntg_course', 'c_erm', 'e35'),
+  E('ntg_course', 'c_reporting', 'e36'),
+  E('ntg_course', 'c_risk', 'e37'),
+  E('ntg_exp', 'e_ab', 'e38'),
+  E('ntg_exp', 'e_kpi', 'e39'),
+  E('ntg_health', 'h_health', 'e40'),
+  E('ntg_health', 'h_geo', 'e41'),
+  E('ntg_fore', 'f_sarima', 'e42'),
+  E('ntg_comm', 'c_story', 'e43'),
+  E('ntg_ana', 'a_trend', 'e44'),
+  E('ntg_ana', 'a_validation', 'e45'),
+  E('ntg_ana', 'a_stakeholder', 'e46'),
+  E('ntg_ana', 'a_strategy', 'e47'),
+  E('ntg_ana', 'a_automation', 'e48'),
+  E('ntg_ana', 'a_leadership', 'e49'),
+  E('ntg_ana', 'a_project', 'e50')
+]);
 
-      { id: 'e_ab',         label: 'A/B testing',                   group: 'non', ...leaf() },
-      { id: 'e_kpi',        label: 'KPI design',                    group: 'non', ...leaf() },
-
-      { id: 'f_sarima',     label: 'Demand forecasting (SARIMA)',   group: 'non', ...leaf() },
-
-      { id: 'c_story',      label: 'Data storytelling',             group: 'non', ...leaf() }
-    ]);
-
-    // ---- Edges ----
-    const E = (a, b, id) => ({ id, from: a, to: b });
-    const edges = new vis.DataSet([
-      // hubs
-      E('skills','technical','e1'), E('skills','nontech','e2'),
-
-      // technical groups
-      E('technical','tg_bi','e3'), E('technical','tg_prog','e4'),
-      E('technical','tg_ml','e5'), E('technical','tg_graph','e6'),
-      E('technical','tg_geo','e7'), E('technical','tg_ops','e8'),
-
-      // non-technical groups
-      E('nontech','ntg_course','e9'), E('nontech','ntg_health','e10'),
-      E('nontech','ntg_exp','e11'), E('nontech','ntg_comm','e12'),
-      E('nontech','ntg_fore','e13'),
-
-      // technical leaves
-      E('tg_bi','t_powerbi','e14'), E('tg_bi','t_tableau','e15'), E('tg_bi','t_excel','e16'),
-      E('tg_prog','t_sql','e17'), E('tg_prog','t_python','e18'), E('tg_prog','t_r','e19'),
-      E('tg_prog','t_pyspark','e20'), E('tg_prog','t_pandas','e21'),
-      E('tg_ml','t_sklearn','e22'), E('tg_ml','t_tensorflow','e23'),
-      E('tg_graph','t_pyvis','e24'), E('tg_graph','t_networkx','e25'),
-      E('tg_geo','t_arcgis','e26'),
-      E('tg_ops','t_dbt','e27'), E('tg_ops','t_git','e28'), E('tg_ops','t_jupyter','e29'),
-
-      // non-technical leaves
-      E('ntg_course','c_predict','e30'), E('ntg_course','c_datamining','e31'), E('ntg_course','c_erm','e32'),
-      E('ntg_health','h_health','e33'),  E('ntg_health','h_geo','e34'),
-      E('ntg_exp','e_ab','e35'),        E('ntg_exp','e_kpi','e36'),
-      E('ntg_fore','f_sarima','e37'),
-      E('ntg_comm','c_story','e38')
-    ]);
 
     // ---- Network ----
     const net = new vis.Network(canvas, { nodes, edges }, {
