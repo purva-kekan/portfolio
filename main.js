@@ -1,5 +1,5 @@
 // =============== Responsive Nav Controller ===============
-const MOBILE_BREAKPOINT_PX = 680;
+const MOBILE_BREAKPOINT_PX = 768;
 const toggle = document.querySelector('.nav-toggle');
 const links = document.querySelector('.nav-links');
 const yearEl = document.getElementById('year');
@@ -39,6 +39,19 @@ toggle?.addEventListener('click', () => {
   const open = links.style.display === 'flex';
   links.style.display = open ? 'none' : 'flex';
   toggle.setAttribute('aria-expanded', (!open).toString());
+});
+
+// Close menu after selecting a nav link on mobile
+links?.addEventListener('click', (event) => {
+  if (!isMobile()) return;
+
+  const target = event.target;
+  if (!(target instanceof HTMLElement)) return;
+
+  if (target.closest('a')) {
+    links.style.display = 'none';
+    toggle?.setAttribute('aria-expanded', 'false');
+  }
 });
 
 // Close with Escape on mobile
