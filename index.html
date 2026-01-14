@@ -2,553 +2,1457 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio</title>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- Styles -->
-  <link rel="stylesheet" href="main.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Purva Kekan | Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header / Nav -->
-  <header class="site-header" id="top">
-    <nav class="nav container">
-      <a class="brand" href="#hero">Purva's Portfolio</a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero -->
-  <section class="hero container" id="hero">
-    <div class="hero__copy">
-      
-    <h1 class="hero__title reveal">Understanding the <br/>mind through patterns
-    </h1>
-      <p class="hero__subtitle reveal">
-        Hey there! I'm a Data Analyst who's worked with everything from 65K+ public health records to 1M+ child protection files—building systems that improved reporting by 40%, cut service delays by 26%, and boosted tracking efficiency by 50%. Whether predicting healthcare demand in Boston, creating child welfare advocacy tools, or building travel safety analytics, I turn data into human stories that support equity and well-being.
-      </p>
-      <div class="hero__cta reveal">
-        <a class="btn" href="#projects">View Projects</a>
-        <a class="btn btn--ghost" href="purva-kekan-resume.pdf" target="_blank" rel="noopener">Resume</a>
-      </div>
-      <!--<ul class="hero__badges reveal">
-        <li>Power BI & Tableau</li>
-        <li>SQL & Python</li>
-        <li>Geospatial (ArcGIS)</li>
-        <li>NLP for Behavior Insights</li>
-      </ul>-->
-    </div>
-    <div class="hero__art reveal">
-        <img src="images/profilepic.jpg" alt="Purva Kekan" class="hero__img" />
-        <p class="hero__caption">DATA ANALYST<br />
-        </p>
-         <!-- Social icons -->
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/purva-prakash-kekan" target="_blank" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/purva-kekan" target="_blank" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="mailto:purvakekan3@gmail.com" aria-label="Email">
-                <i class="fas fa-envelope"></i>
-            </a>
+  <div class="layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-header sidebar-header-stacked">
+        <div class="sidebar-photo-wrapper">
+          <img
+            src="cover image.jpg"
+            alt="Purva Prakash Kekan"
+            class="sidebar-photo"
+          />
         </div>
-
-    </div>
-  </section>
-
-  <!-- About -->
-  <section class="about container section" id="about">
-    <div class="section__head">
-      <h2 class="section__title reveal">About Me</h2>
-    </div>
-    <div class="about__grid">
-        <img src="images/personalphoto6.jpg" alt="working on her laptop" class="about__img reveal" />
-      
-      <div class="about__copy reveal">
-        <p>
-          My journey into data analytics started with a simple belief: numbers should serve people. Over the past three years, I've worked with organizations where data directly impacts lives—from analyzing 1M+ child protection records at KARA to flag high-risk situations, to processing 65K+ public health records in Boston to ensure communities get the care they need. At IpserLab, I'm building analytics for an AI travel platform that prioritizes safety and accessibility for vulnerable travelers, creating systems that help reduce travel anxiety for women, LGBTQ+ individuals, and solo adventurers.
-        </p>
-        <p>
-          What drives me is discovering the human story in the data. Whether I'm using SARIMA forecasting to predict healthcare demand, building Power BI dashboards to identify community health gaps, or developing predictive models with 91% accuracy to prevent supply shortages, I'm always asking: how can this insight make someone's day better or safer? My work has improved interventions by 25-40% across organizations, but the real reward is knowing that behind every improvement, there are real people receiving better care or finding support when they need it most.
-        </p>
-        <a class="btn btn--pill" href="#contact">Let’s connect</a>
+        <div class="sidebar-identity">
+          <div class="sidebar-title">Purva Prakash Kekan</div>
+          <div class="sidebar-role">AI/DATA ENGINEER</div>
+        </div>
       </div>
-      
-    </div>
-  </section>
-<!-------------------------------------------------------------- Work Experience ---------------------------------------------------------->
-<section class="experience container section" id="experience">
-  <div class="section__head">
-    <h2 class="section__title reveal">Work Experience</h2>
-  </div>
 
-  <ol class="timeline">
-    <!-- IpserLab -->
-    <li class="tl-item reveal">
-      <div class="tl-dot"></div>
-      <article class="xp-card">
-  
-        <header class="xp-head">
-          <h3> Data Analyst <span> @ IpserLab | Remote, USA</span></h3>
-          <span class="xp-meta">May 2025 – Present</span>
-        </header>
-        <ul class="xp-bullets">
-          <li>Led analytics for Cavo, an AI-trip planner boosting 50% tracking efficiency by merging 10+ data feeds into Excel and GitHub</li>
-          <li>Developed 15+ KPI dashboards improving risk reporting accuracy by 20% through ETL automation in Excel and SQL</li>
-          <li>Integrated 10+ data feeds enhancing data consistency and timeliness by 25% using Google Places API and Python pipelines</li>
-      
-        </ul>
-        <ul class="chip-list">
-         <li>Excel</li>•<li>Leadership</li>•<li>SQL</li>•<li>Git/GitHub</li>•<li>KPI design</li>•<li>Python</li>•<li>API</li>
-        </ul>
-      </article>
-    </li>
-
-    <!-- Boston Public Health Commission -->
-    <li class="tl-item reveal">
-      <div class="tl-dot"></div>
-      <article class="xp-card">
-        <header class="xp-head">
-          <h3>Healthcare Data Analyst<span> @ Boston Public Health Commission | Boston, MA</span></h3>
-          <span class="xp-meta">Jan 2025 - Mar 2025</span>
-        </header>
-        <ul class="xp-bullets">
-          <li>Cleaned and validated 65K+ records ensuring 100% data integrity and SLA compliance via Pandas and Power BI</li>
-          <li>Built quality-control checks for service metrics reducing errors by 30% through SQL and ETL transformations</li>
-          <li>Automated data preparation for predictive models increasing forecasting efficiency by 25% using Python scripts</li>
-
-        </ul>
-        <ul class="chip-list">
-          <li>SLA Compliance</li>•<li>Power BI</li>•<li>SQL</li>•<li>Python</li>•<li>ETL workflows</li>•<li>predictive modelling</li>
-        </ul>
-      </article>
-    </li>
-
-    <!-- Kids At Risk Action -->
-    <li class="tl-item reveal">
-      <div class="tl-dot"></div>
-      <article class="xp-card">
-        <header class="xp-head">
-          <h3>Data Analyst<span> @ Kids At Risk Action (KARA) | Boston, MA</span></h3>
-          <span class="xp-meta">Apr 2024 - Jun 2024</span>
-        </header>
-        <ul class="xp-bullets">
-          <li>Consolidated 1M+ donor and outreach records improving campaign reporting accuracy by 35% with PostgreSQL & Tableau analytics</li>
-          <li>Produced 30+ analytics summaries identifying high-risk states with Scikit-learn for advocacy campaigns</li>
-          <li>Partnered with tech and communications teams to document CRM aligned workflows integrating APIs and fundraising datasets</li>
-        </ul>
-        <ul class="chip-list">
-          <li>Tableau</li>•<li>Child Advocacy</li>•<li>Policy Analysis</li>•<li>Predictive Modeling</li>•<li>Regulatory Compliance</li>
-        </ul>
-      </article>
-    </li>
-    
-    
-    <!-- HDFC Bank (keep concise) -->
-    <li class="tl-item reveal">
-      <div class="tl-dot"></div>
-      <article class="xp-card">
-        <header class="xp-head">
-          <h3>Risk Data Analyst <span> @ HDFC Bank | Mumbai, India</span></h3>
-          <span class="xp-meta">Jan 2023 - Jun 2023</span>
-        </header>
-        <ul class="xp-bullets">
-          <li>Processed 500K+ financial records, reducing review cycle time by 50% using ETL pipelines and Snowflake for centralized reporting</li>
-          <li>Engineered compliance workflows saving 6+ hours weekly using Airflow and dbt pipelines with JIRA task tracking system</li>
-          <li>Performed A/B testing on 100K+ accounts identifying 12% higher repayment segments with Python analytics</li>
-        </ul>
-        <ul class="chip-list">
-          <li>Risk Analysis</li>•<li>Airflow</li>•<li>dbt</li>•<li>Risk Management</li>•<li>A/B Testing</li>•<li>Stakeholder communication</li>
-        </ul>
-      </article>
-    </li>
-
-    <!-- Acute Bioscience -->
-    <li class="tl-item reveal">
-      <div class="tl-dot"></div>
-      <article class="xp-card">
-        <header class="xp-head">
-          <h3>Data Analyst - Inventory Management<span> @ Acute Bioscience | Remote, India</span></h3>
-          <span class="xp-meta">Jul 2022 - Dec 2022</span>
-        </header>
-        <ul class="xp-bullets">
-          <li>Transformed 50K+ sales records enhancing reporting accuracy by 25% using MongoDB and Excel</li>
-          <li>Predicted demand reducing stockouts by 20% through R based forecast models and QA tasks using JIRA</li>
-          <li>Optimized compliance reports cutting processing time by 30% while maintaining HIPAA standards</li>
-        </ul>
-        <ul class="chip-list">
-          <li>MongoDB</li>•<li>Excel</li>•<li>Model Forecasting</li>•<li>Quality Assurance</li>•<li>HIPAA</li>
-      </article>
-    </li>
-  </ol>
-</section>
-
-<!-------------------------------------------------------------- Education ------------------------------------------------------------------>
-<section class="education container section" id="education">
-  <div class="section__head">
-    <h2 class="#education section__title reveal">Education</h2>
-  </div>
-
-  <ol class="timeline">
-    <!-- MASTERS -->
-    <li class="tl-item reveal">
-      <div class="tl-dot"></div>
-  <div class="edu-grid">
-    <article class="edu-card reveal">
-      <header class="edu-head">
-        <h3>Masters of Professional Studies in Analytics - <i> GPA: 3.93/4.0</i></h3>
-         
-        <span class="edu-meta"><b>March 2025</b></span>
-      </header>
-      <span class="edu-notes">Northeastern University - Boston, MA</span>
-      <br/>
-      <ul class="chip-list">
-        <i>Awards:</i> <li>CPS Leaders & Scholars Award</li>
-      </ul>
-      <ul class="chip-list">
-        <i>Coursework:</i> <li>Healthcare/Pharma Analytics</li>•<li>Predictive Analytics</li>•<li>Big Data</li>•<li>Enterprise Risk Management</li>•<li>Data Mining</li>•<li>Data Warehouse and SQL</li>
-      </ul>
-      
-    </article>
-  </li>
-
-  <!-- BACHELORS -->
-    <li class="tl-item reveal">
-      <div class="tl-dot"></div>
-    <article class="edu-card reveal">
-      <header class="edu-head">
-        <h3>Bachelor of Science in Information Technology - <i> GPA: 3.7/4.0</i></h3>
-        <span class="edu-meta"><b>May 2023</b></span>
-      </header>
-      <span class="edu-notes">Mumbai University - Mumbai, India</span>
-      <br/>
-      <ul class="chip-list">
-        <i>Coursework:</i> <li>Database Management Systems</li>•<li>Project Management</li>•<li>Business Intelligence</li>•<li>Artificial Intelligence</li>•<li>Probability and Statistics</li>
-      </ul>
-    </article>
-    </li>
-</section>
-</ol>
-
-  <!-------------------------------------------------------------------------------- Projects ----------------------------------------------------------------------------------------------------------------------->
-<!-- PROJECTS -->
-<section class="section container" id="projects">
-  <div class="section__head">
-    <h2 class="section__title">What I've Built</h2>
-  </div>
-
-  <div class="proj-grid">
-
-    <!-- 4. Atomic Habits: Semantic Mapping -->
-    <article class="proj-card">
-      <a class="proj-thumb" href="https://github.com/purva-kekan/NLP-Analysis-Atomic-Habits" target="_blank" rel="noopener">
-        <img src="images/ap1.jpeg" alt="Atomic Habits: Semantic Mapping" />
-        <span class="proj-open" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-8 8"/><path d="M5 11v10h10"/></svg>
-        </span>
-      
-      <div class="proj-overlay">
-        <p class="proj-desc">
-          Developed an NLP-powered Streamlit app analyzing Atomic Habits using sentiment analysis, keyword extraction, and concept mapping as well as adding a semantic search engine and interactive graph with FAISS and pyvis.
-        </p>
-        <ul class="proj-tags">
-          <li>Python</li><li>TF-IDF</li><li>PyVis</li><li>NetworkX</li>
-        </ul>
-      </div>
-      </a>
-    </article>
-
-    <!-- 2. Boston 311 Syringe Requests -->
-    <article class="proj-card">
-      <a class="proj-thumb" href="https://github.com/purva-kekan/Healthcare-Analytics-Boston-Syringe-Request" target="_blank" rel="noopener">
-        <img src="images/ap2.jpeg" alt="Boston 311 Syringe Requests" />
-        <span class="proj-open" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-8 8"/><path d="M5 11v10h10"/></svg>
-        </span>
-      
-      <div class="proj-overlay">
-        <p class="proj-desc">
-          Developed a Power BI dashboard on the Boston 311 Syringe Requests data, using geospatial analysis, predictive analytics through Python and seasonal trend analysis to uncover the patterns in demands of syringe requests, allocating resources optimally and SLA compliance
-        </p>
-        <ul class="proj-tags">
-          <li>Power BI</li><li>ArcGIS</li><li>API</li>
-        </ul>
-      </div>
-      </a>
-    </article>
-
-    <!-- 1. Respiratory Mortality Analysis System -->
-    <article class="proj-card">
-      <a class="proj-thumb" href="index.html" target="_blank" rel="noopener">
-        <img src="images/ap10.jpeg" alt="Respiratory Mortality Analysis System" />
-        <span class="proj-open" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-8 8"/><path d="M5 11v10h10"/></svg>
-        </span>
-      <div class="proj-overlay">
-        <p class="proj-desc">
-          A production-ready machine learning platform for analyzing and predicting respiratory-related mortality trends in the United States. This system processes CDC WONDER database records spanning 1999-2020 and provides real-time predictions through a scalable REST API.
-        </p>
-        <ul class="proj-tags">
-          <li>Public Health</li><li>CDC records</li><li>Regression Modelling</li>
-        </ul>
-      </div>
-       </a>
-    </article>
-
-    <!-- 4. KARA Child Abuse -->
-    <article class="proj-card">
-      <a class="proj-thumb" href="https://github.com/purva-kekan/child-abuse-undereporting" target="_blank" rel="noopener">
-        <img src="images/ap4.jpeg" alt="KARA child abuse" />
-        <span class="proj-open" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-8 8"/><path d="M5 11v10h10"/></svg>
-        </span>
-     
-      <div class="proj-overlay">
-        <p class="proj-desc">
-          Built visuals for "Americas children in 100 charts" book and improved national child welfare reporting by 40%, enabling 35% stronger policy advocacy through integrated data systems
-        </p>
-        <ul class="proj-tags">
-          <li>Power BI</li><li>Python</li><li>Excel</li>
-        </ul>
-      </div>
-       </a>
-    </article>
-
-<!-- 1. Supply Chain & Billing Reconciliation -->
-    <article class="proj-card is-hidden">
-      <a class="proj-thumb" href="https://github.com/purva-kekan/Supply-Chain-Optimization-Dashboard" target="_blank" rel="noopener">
-        <img src="images/ap3.jpeg" alt="Supply Chain & Billing Reconciliation" />
-        <span class="proj-open" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-8 8"/><path d="M5 11v10h10"/></svg>
-        </span>
-      <div class="proj-overlay">
-        <p class="proj-desc">
-          Built Power BI dashboard analyzing 180K+ records to track orders, inventory, and delivery trends across multiple regions, improving fulfillment KPIs by 30% and reduced delivery delays by 25% using custom DAX metrics and Power Query transformations
-        </p>
-        <ul class="proj-tags">
-          <li>Power BI</li><li>DAX</li><li>Power Query</li>
-        </ul>
-      </div>
-       </a>
-    </article>
-
-    <!-- 5. NFL Playtype Predictive Analytics -->
-<article class="proj-card is-hidden">
-  <a class="proj-thumb" href="https://github.com/purva-kekan/Supply-Chain-Optimization-Dashboard" target="_blank" rel="noopener">
-    <img src="images/ap5.jpeg" alt="NFL Playtype Predictive Analytics" />
-    <span class="proj-open" aria-hidden="true">
-      <svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-8 8"/><path d="M5 11v10h10"/></svg>
-    </span>
-    <div class="proj-overlay">
-      <p class="proj-desc">Designed Machine Learning models to forecast KPIs based on historical performance metrics, validating outcomes using cross-validation and improved model precision, achieving 92% accuracy in predicting future trends across multiple datasets
-</p>
-      <ul class="proj-tags">
-        <li>Python</li><li>Power BI</li>
-      </ul>
-    </div>
-  </a>
-</article>
-
-<!-- 6. Campaign ROI and engagement -->
-<article class="proj-card is-hidden">
-  <a class="proj-thumb" href="https://github.com/purva-kekan/Social-Media-Advertising-Performance-Dashboard" target="_blank" rel="noopener">
-    <img src="images/ap6.jpeg" alt="Campaign ROI and Engagement" />
-    <span class="proj-open" aria-hidden="true">
-      <svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-8 8"/><path d="M5 11v10h10"/></svg>
-    </span>
-    <div class="proj-overlay">
-      <p class="proj-desc">Built a Social Media Advertising Performance Dashboard using Power BI to help marketing and advertising teams track paid campaign performance across multiple platforms and companies.</p>
-      <ul class="proj-tags">
-        <li>Python</li><li>Power BI</li>
-      </ul>
-    </div>
-  </a>
-</article>
-
-<!-- 5. Global Energy Trend Analysis -->
-<article class="proj-card is-hidden">
-  <a class="proj-thumb" href="https://public.tableau.com/app/profile/purva.kekan/viz/GlobalEnergyTrendAnalysisYear1990-2020/RegionDashboard" target="_blank" rel="noopener">
-    <img src="images/ap7.jpeg" alt="Global Energy Trend Analysis" />
-    <span class="proj-open" aria-hidden="true">
-      <svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-8 8"/><path d="M5 11v10h10"/></svg>
-    </span>
-    <div class="proj-overlay">
-      <p class="proj-desc">Explored global time-series patterns using statistical and visual analytics, extracting actionable insights from longitudinal data spanning multiple markets and enhancing executive decision-making accuracy by 28% through predictive indicators</p>
-      <ul class="proj-tags">
-        <li>Python</li><li>Power BI</li>
-      </ul>
-    </div>
-  </a>
-</article>
-
-<!-- 8. Enterprise Risk Management -->
-<article class="proj-card is-hidden">
-  <a class="proj-thumb" href="https://github.com/purva-kekan/Enterprise-Risk-Managment-Report" target="_blank" rel="noopener">
-    <img src="images/ap8.jpeg" alt="Enterprise Risk Management" />
-    <span class="proj-open" aria-hidden="true">
-      <svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-8 8"/><path d="M5 11v10h10"/></svg>
-    </span>
-    <div class="proj-overlay">
-      <p class="proj-desc">Assessed merger risks in the Oracle-Cerner merger including integration gaps and cybersecurity threats using SWOT and I&W analysis, delivering executive dashboards that supported risk mitigation strategies and improved strategic planning by 40%
-</p>
-      <ul class="proj-tags">
-        <li>Python</li><li>Power BI</li>
-      </ul>
-    </div>
-  </a>
-</article>
-
-<!-- 9. Text Mining Analysis -->
-<article class="proj-card is-hidden">
-  <a class="proj-thumb" href="https://github.com/purva-kekan/Text-Mining-Analysis" target="_blank" rel="noopener">
-    <img src="images/ap9.jpeg" alt="Text Mining Analysis" />
-    <span class="proj-open" aria-hidden="true">
-      <svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-8 8"/><path d="M5 11v10h10"/></svg>
-    </span>
-    <div class="proj-overlay">
-      <p class="proj-desc">Analyzed Dr. Martin Luther King’s “I Have a Dream” speech using NLP techniques like stemming, stopword removal, and Term-Document Matrix, identifying key word clusters and sentiment patterns, enhancing interpretability through word clouds and frequency plots</p>
-      <ul class="proj-tags">
-        <li>Python</li><li>Power BI</li>
-      </ul>
-    </div>
-  </a>
-</article>
-
-  </div>
-  <div class="section__foot">
-    <a href="#" id="loadMoreBtn" class="btn btn--pill">View All Projects</a>
-  </div>
-</section>
-
-
-<!------------------------------------------------------------------ Skills ----------------------------------------------------------------------------------->
-
-<section class="skills container section" id="skills">
-  <div class="section__head">
-    <h2 class="section__title">Skills</h2>
-  </div>
-
-  <!-- toolbar -->
-  <div class="graph-toolbar">
-    <div class="graph-legend">
-      <span class="legend-dot legend-core legend-box"></span> Core
-      <span class="legend-dot legend-tech legend-box"></span> Technical
-      <span class="legend-dot legend-non legend-box"></span> Non-Technical
-    </div>
-    <div class="graph-actions">
-      <button class="btn btn--pill is-active" data-filter="all">All</button>
-      <button class="btn btn--pill" data-filter="technical">Technical</button>
-      <button class="btn btn--pill" data-filter="nontech">Non-Technical</button>
-      <!--<button class="btn btn--pill" data-filter="fit">Fit</button>-->
-    </div>
-  </div>
-
-  <!-- graph canvas -->
-  <div id="skillsGraph" class="skills-graph" role="img"
-       aria-label="Network graph of technical tools and non-technical methods."></div>
-
-  <p class="graph-note">Tip: drag to explore • scroll to zoom • click nodes to focus</p>
-</section>
-
-
-
-
-<!-------------------------------------------------------------- Contact ----------------------------------------------------------------------------------->
-  
-
-  <!-- CONTACT -->
-<section class="contact2 section container" id="contact">
-  <div class="section__head">
-    <h2 class="section__title">Let’s Collaborate</h2>
-  </div>
-
-    <!-- Right: 2/3 -->
-    <aside class="contact2-right">
-      <div class="contact2-card">
-        <ul class="contact2-socials">
-          <!-- Email -->
-          <li class="social-item">
-            <span class="c2-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <rect x="3" y="5" width="18" height="14" fill="none" stroke="currentColor" stroke-width="2"/>
-                <path d="M3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="2"/>
-              </svg>
-            </span>
-            <div class="c2-details">
-              <span class="c2-label">Email</span>
-              <a href="mailto:purvakekan3@gmail.com">purvakekan3@gmail.com</a>
-            </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li>
+            <a href="#overview" class="nav-link active">
+              <span class="icon">🏠</span>
+              <span>Overview</span>
+            </a>
           </li>
-
-          <!-- GitHub -->
-          <li class="social-item">
-            <span class="c2-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 .5A11.5 11.5 0 0 0 0 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6 0-.3 0-1 0-2-3.2.7-3.9-1.5-3.9-1.5-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.2 1.2a11.2 11.2 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.3.8 1.1.8 2.2 0 1.6 0 2.8 0 3.2 0 .3.2.7.8.6A11.5 11.5 0 0 0 24 12 11.5 11.5 0 0 0 12 .5z"
-                      fill="currentColor"/>
-              </svg>
-            </span>
-            <div class="c2-details">
-              <span class="c2-label">GitHub</span>
-              <a href="https://github.com/purva-kekan" target="_blank" rel="noopener">github.com/purva-kekan</a>
-            </div>
+          <li>
+            <a href="#projects" class="nav-link">
+              <span class="icon">📊</span>
+              <span>Projects</span>
+            </a>
           </li>
-
-          <!-- LinkedIn -->
-          <li class="social-item">
-            <span class="c2-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm4 7H6v8h2v-8zm-1-1.8a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4zM20 13.5c0-2.7-1.4-3.9-3.2-3.9-1.5 0-2.2.8-2.6 1.4v-1.2H12v8h2.2v-4.5c0-1.2.2-2.3 1.7-2.3 1.5 0 1.5 1.4 1.5 2.4V19H20v-5.5z"
-                      fill="currentColor"/>
-              </svg>
-            </span>
-            <div class="c2-details">
-              <span class="c2-label">LinkedIn</span>
-              <a href="https://www.linkedin.com/in/purva-prakash-kekan" target="_blank" rel="noopener">linkedin.com/in/purva-prakash-kekan</a>
-            </div>
+          <li>
+            <a href="#experience" class="nav-link">
+              <span class="icon">📁</span>
+              <span>Experience & Education</span>
+            </a>
+          </li>
+          <li>
+            <a href="#skills" class="nav-link">
+              <span class="icon">🧰</span>
+              <span>Skills</span>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="#lab" class="nav-link">
+              <span class="icon">🧪</span>
+              <span>Quiet Aranya Lab</span>
+            </a>
+          </li> -->
+          <li>
+            <a href="#testimonials" class="nav-link">
+              <span class="icon">💬</span>
+              <span>Testimonials</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link">
+              <span class="icon">📮</span>
+              <span>Contact</span>
+            </a>
           </li>
         </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-actions">
+          <a href="#resume" class="btn-outline" id="resumeToggleBtn">
+            <span class="icon">📄</span>
+            <span class="resume-btn-text">Resume</span>
+          </a>
+        </div>
+        <small>
+          Hint: This site is designed like a dashboard — explore sections as if
+          you’re exploring an analytics app.
+        </small>
       </div>
     </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+      <!--  RESUME VIEWER-->
+      <section id="resume" class="resume-viewer" style="display: none;">
+  <div class="resume-viewer-header">
+    <div>
+      <div class="section-title">Resume</div>
+      <div class="section-subtitle">
+        Complete career overview with projects, achievements, and skills.
+      </div>
+    </div>
+    <span class="chip">PDF View</span>
+  </div>
+
+  <div class="resume-viewer-container">
+    <!-- PDF Embed -->
+    <div class="resume-pdf-wrapper">
+      <iframe 
+        src="resume.pdf" 
+        class="resume-pdf-frame"
+        title="Purva Prakash Kekan Resume"
+      ></iframe>
+    </div>
+
+    <!-- Download Button -->
+    <div class="resume-viewer-actions">
+      <a href="resume.pdf" download class="resume-download-btn">
+        <span class="icon">📥</span>
+        <span>Download PDF</span>
+      </a>
+      <button class="resume-close-btn" id="resumeCloseBtn">
+        <span class="icon">✕</span>
+        <span>Close Resume</span>
+      </button>
+    </div>
   </div>
 </section>
 
 
+<!-- ============================================================ OVERVIEW / HERO ============================================================ -->
+<section id="overview">
+  <!-- 3D Flip Card Container -->
+  <div class="flip-card-3d-container">
+    <div class="flip-card-3d">
+      
+      <!-- FRONT SIDE: Introduction -->
+      <div class="flip-card-front">
+        <div class="flip-front-content">
+          <h1 class="flip-hero-title">
+            THE AI/DATA ENGINEER<br>
+            <span class="flip-highlight">PORTFOLIO DASHBOARD</span>
+          </h1>
+          
+          <p class="flip-hero-description">
+            Hi, I'm Purva Kekan, an AI/Data Engineer passionate about <strong>transforming data into actionable insights.</strong> 
+            With expertise in <strong>SQL, Python, Power BI and AI technologies</strong>, I build robust data pipelines and <strong>analytics solutions 
+            that drive informed decision making</strong>. Explore my portfolio to see how <strong>I leverage data to create impactful solutions</strong> 
+            across various industries.
+          </p>
 
-  <button class="to-top" aria-label="Back to top" title="Back to top">↑</button>
+          <!-- <div class="flip-specializations">
+            <div class="spec-tag">🏥 Healthcare & Public Health Analytics</div>
+            <div class="spec-tag">💼 SQL • Python • Power BI</div>
+            <div class="spec-tag">🚀 AI & Product Analytics</div>
+           <div class="spec-tag">📊 </div> 
+          </div> -->
 
-  <footer class="site-footer">
-  <div class="container footer__wrap">
-    <!-- Use the SAME brand class your navbar uses.
-         If your nav brand is .site-brand or .nav__brand, keep it here too. -->
-    <div class="footer__brand nav__brand">Purva Kekan</div>
+          <div class="flip-hint">
+            <span class="hint-icon">↻</span>
+            <span>Hover to see impact metrics</span>
+          </div>
+        </div>
+      </div>
 
-    <div class="footer__copy">© 2025 Purva Prakash Kekan. All rights reserved.</div>
+      <div class="flip-card-back">
+        <div class="flip-back-content">
+          <h2 class="flip-back-title">Impact Metrics</h2>
+
+          <div class="flip-metrics-grid">
+            <div class="flip-metric-card">
+              <div class="flip-kpi-glow"></div>
+              <div class="flip-kpi-value">15+</div>
+              <div class="flip-kpi-label">AI Models & Pipelines Deployed</div>
+            </div>
+
+            <div class="flip-metric-card">
+              <div class="flip-kpi-glow"></div>
+              <div class="flip-kpi-value">500K+</div>
+              <div class="flip-kpi-label">Tokens Processed (NLP/LLM)</div>
+            </div>
+
+            <div class="flip-metric-card">
+              <div class="flip-kpi-glow"></div>
+              <div class="flip-kpi-value">30-50%</div>
+              <div class="flip-kpi-label">Faster AI-Driven Decisions</div>
+            </div>
+
+            <div class="flip-metric-card">
+              <div class="flip-kpi-glow"></div>
+              <div class="flip-kpi-value">40%</div>
+              <div class="flip-kpi-label">Improved Model Accuracy</div>
+            </div>
+
+            <div class="flip-metric-card">
+              <div class="flip-kpi-glow"></div>
+              <div class="flip-kpi-value">1M+</div>
+              <div class="flip-kpi-label">Data Records Engineered</div>
+            </div>
+
+            <div class="flip-metric-card">
+              <div class="flip-kpi-glow"></div>
+              <div class="flip-kpi-value">8 hrs</div>
+              <div class="flip-kpi-label">Automated Weekly via Data Pipelines </div>
+            </div>
+          </div>
+         
+
+          <div class="flip-hint back">
+            <span class="hint-icon">↻</span>
+            <span>Hover away to return</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
-</footer>
+</section>
+
+<!--PROJECTS SECTION-->
+
+<section id="projects">
+  <div class="section-header">
+    <div>
+      <div class="section-title">Projects</div>
+      <div class="section-subtitle">
+        hover over any project to see full details.
+      </div>
+    </div>
+    <span class="chip">8 Case studies</span>
+  </div>
+
+  <!-- ACCORDION SECTION -->
+  <div class="projects-bubble-section">
+    <div class="projects-accordion">
+      <!-- First 4 Projects - Always Visible -->
+       <div class="accordion-item" id="project-1">
+  <div class="accordion-header">
+    <div class="accordion-left">
+      <div class="accordion-number">01</div>
+      <div class="accordion-info">
+        <div class="accordion-title">Atomic Habits: NLP Analysis Platform</div>
+        <div class="accordion-tech">Python · Streamlit · BART · TextBlob · PyVis · NetworkX</div>
+      </div>
+    </div>
+    <div class="accordion-metrics">
+      <div class="accordion-metric">
+        <div class="metric-value">40%</div>
+        <div class="metric-label">Faster insights</div>
+      </div>
+      <div class="accordion-metric">
+        <div class="metric-value">500K+</div>
+        <div class="metric-label">Tokens analyzed</div>
+      </div>
+      <div class="accordion-badge">NLP · Product</div>
+    </div>
+    <div class="accordion-icon">▼</div>
+  </div>
+  <div class="accordion-content">
+    <div class="accordion-body">
+      <p class="accordion-description">
+        Transformed James Clear's "Atomic Habits" into an interactive analytics platform using advanced NLP. Built AI-powered chapter summaries with BART transformers, sentiment analysis tracking emotional tone across 20 chapters, TF-IDF keyword extraction, and an interactive PyVis concept network graph mapping 50+ behavioral psychology concepts and their relationships. Deployed on Streamlit Cloud for public access.
+      </p>
+      <div class="accordion-chart">
+        <div class="chart-column">
+          <div class="chart-column-label">Insight speed</div>
+          <div class="chart-column-bar">
+            <div class="chart-column-fill" style="height: 40%;"></div>
+          </div>
+          <div class="chart-column-value">+40%</div>
+        </div>
+        <div class="chart-column">
+          <div class="chart-column-label">Concept nodes</div>
+          <div class="chart-column-bar">
+            <div class="chart-column-fill" style="height: 80%;"></div>
+          </div>
+          <div class="chart-column-value">>50</div>
+        </div>
+        <div class="chart-column">
+          <div class="chart-column-label">Tech complexity</div>
+          <div class="chart-column-bar">
+            <div class="chart-column-fill" style="height: 90%;"></div>
+          </div>
+          <div class="chart-column-value">9/10</div>
+        </div>
+        <div class="chart-column">
+          <div class="chart-column-label">Load time</div>
+          <div class="chart-column-bar">
+            <div class="chart-column-fill" style="height: 95%;"></div>
+          </div>
+          <div class="chart-column-value">&lt;2s</div>
+        </div>
+      </div>
+      <div class="accordion-tags">
+        <span class="tag">Transformer models (BART)</span>
+        <span class="tag">Sentiment analysis</span>
+        <span class="tag">Concept network graphs</span>
+        <span class="tag">TF-IDF extraction</span>
+        <span class="tag">PyVis visualization</span>
+        <span class="tag">Streamlit deployment</span>
+      </div>
+      
+      <!-- PROJECT LINKS -->
+      <div class="project-links">
+        <a href="https://github.com/purva-kekan/atomichabits-nlp-project" target="_blank" class="project-link-btn github">
+          <span class="link-icon">💼</span>
+          <span>GitHub Repo</span>
+        </a>
+        <a href="https://atomic-habits-nlp.streamlit.app/" target="_blank" class="project-link-btn live-demo">
+          <span class="link-icon">🚀</span>
+          <span>Live Demo</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div class="accordion-item" id="project-2">
+  <div class="accordion-header">
+    <div class="accordion-left">
+      <div class="accordion-number">02</div>
+      <div class="accordion-info">
+        <div class="accordion-title">OptiChain: Supply Chain Optimization Dashboard</div>
+        <div class="accordion-tech">Power BI · DAX · Python · Power Query · SQL</div>
+      </div>
+    </div>
+    <div class="accordion-metrics">
+      <div class="accordion-metric">
+        <div class="metric-value">35%</div>
+        <div class="metric-label">Faster decisions</div>
+      </div>
+      <div class="accordion-metric">
+        <div class="metric-value">180K+</div>
+        <div class="metric-label">Records analyzed</div>
+      </div>
+      <div class="accordion-badge">Supply Chain · BI</div>
+    </div>
+    <div class="accordion-icon">▼</div>
+  </div>
+  <div class="accordion-content">
+    <div class="accordion-body">
+      <p class="accordion-description">
+        Built a comprehensive 5-page Power BI dashboard analyzing 180K+ supply chain records (2015-2017) to optimize inventory management, delivery performance, and profitability. Created custom DAX measures for Sales Velocity, Inventory Value at Risk, Dead Stock detection, and Net Gain per Order. Features interactive drillthrough pages, dynamic tooltips, and conditional formatting to identify fulfillment bottlenecks, shipping delays, and underperforming products—enabling data-driven decisions that reduce delays and minimize dead stock.
+      </p>
+      <div class="accordion-chart">
+        <div class="chart-column">
+          <div class="chart-column-label">Decision speed</div>
+          <div class="chart-column-bar">
+            <div class="chart-column-fill" style="height: 35%;"></div>
+          </div>
+          <div class="chart-column-value">+35%</div>
+        </div>
+        <div class="chart-column">
+          <div class="chart-column-label">Pages created</div>
+          <div class="chart-column-bar">
+            <div class="chart-column-fill" style="height: 100%;"></div>
+          </div>
+          <div class="chart-column-value">5</div>
+        </div>
+        <div class="chart-column">
+          <div class="chart-column-label">Custom measures</div>
+          <div class="chart-column-bar">
+            <div class="chart-column-fill" style="height: 80%;"></div>
+          </div>
+          <div class="chart-column-value">15+</div>
+        </div>
+        <div class="chart-column">
+          <div class="chart-column-label">Data processed</div>
+          <div class="chart-column-bar">
+            <div class="chart-column-fill" style="height: 90%;"></div>
+          </div>
+          <div class="chart-column-value">180K</div>
+        </div>
+      </div>
+      <div class="accordion-tags">
+        <span class="tag">DAX calculations</span>
+        <span class="tag">Power Query ETL</span>
+        <span class="tag">Interactive dashboards</span>
+        <span class="tag">KPI design</span>
+        <span class="tag">Drillthrough pages</span>
+        <span class="tag">Python data cleaning</span>
+      </div>
+      
+      <!-- PROJECT LINKS -->
+      <div class="project-links">
+        <a href="https://github.com/purva-kekan/optichain-supply-chain-optimization-dashboard" target="_blank" class="project-link-btn github">
+          <span class="link-icon">💼</span>
+          <span>GitHub Repo</span>
+        </a>
+        <a href="https://drive.google.com/file/d/16o00K_REzzb__o8WCldgcdjCxQa7lA04/view?usp=sharing" target="_blank" class="project-link-btn">
+          <span class="link-icon">🎥</span>
+          <span>Video Demo</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="accordion-item" id="project-3">
+        <div class="accordion-header">
+          <div class="accordion-left">
+            <div class="accordion-number">03</div>
+            <div class="accordion-info">
+              <div class="accordion-title">Equity in Access: Public Health Dashboard</div>
+              <div class="accordion-tech">Python · Power BI · Geospatial · SARIMA</div>
+            </div>
+          </div>
+          <div class="accordion-metrics">
+            <div class="accordion-metric">
+              <div class="metric-value">25%</div>
+              <div class="metric-label">Better targeting</div>
+            </div>
+            <div class="accordion-metric">
+              <div class="metric-value">65K</div>
+              <div class="metric-label">Records</div>
+            </div>
+            <div class="accordion-badge">Healthcare</div>
+          </div>
+          <div class="accordion-icon">▼</div>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-body">
+            <p class="accordion-description">
+              Analyzed 65K+ service records to uncover neighborhood-level disparities and built dashboards used by public health teams to improve interventions by ~25%. Includes geospatial mapping and SARIMA forecasting for early warning systems.
+            </p>
+            <div class="accordion-chart">
+              <div class="chart-column">
+                <div class="chart-column-label">Intervention targeting</div>
+                <div class="chart-column-bar">
+                  <div class="chart-column-fill" style="height: 25%;"></div>
+                </div>
+                <div class="chart-column-value">+25%</div>
+              </div>
+              <div class="chart-column">
+                <div class="chart-column-label">Early warning accuracy</div>
+                <div class="chart-column-bar">
+                  <div class="chart-column-fill" style="height: 35%;"></div>
+                </div>
+                <div class="chart-column-value">+35%</div>
+              </div>
+              <div class="chart-column">
+                <div class="chart-column-label">Geographic zones</div>
+                <div class="chart-column-bar">
+                  <div class="chart-column-fill" style="height: 60%;"></div>
+                </div>
+                <div class="chart-column-value">12</div>
+              </div>
+              <div class="chart-column">
+                <div class="chart-column-label">Report time saved</div>
+                <div class="chart-column-bar">
+                  <div class="chart-column-fill" style="height: 50%;"></div>
+                </div>
+                <div class="chart-column-value">2d→4h</div>
+              </div>
+            </div>
+            <div class="accordion-tags">
+              <span class="tag">Equity-focused KPIs</span>
+              <span class="tag">Geospatial mapping</span>
+              <span class="tag">Forecasting</span>
+              <span class="tag">Disparities analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item" id="project-4">
+        <div class="accordion-header">
+          <div class="accordion-left">
+            <div class="accordion-number">04</div>
+            <div class="accordion-info">
+              <div class="accordion-title">Risk & Compliance Analytics</div>
+              <div class="accordion-tech">SQL · Python · Dashboarding · ETL</div>
+            </div>
+          </div>
+          <div class="accordion-metrics">
+            <div class="accordion-metric">
+              <div class="metric-value">35%</div>
+              <div class="metric-label">Better visibility</div>
+            </div>
+            <div class="accordion-metric">
+              <div class="metric-value">500K</div>
+              <div class="metric-label">Records</div>
+            </div>
+            <div class="accordion-badge">Finance</div>
+          </div>
+          <div class="accordion-icon">▼</div>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-body">
+            <p class="accordion-description">
+              Built credit-risk and compliance dashboards on 500K+ financial records, improving portfolio visibility by ~35% and reducing reporting time by 50%. Automated ETL pipelines ensure real-time regulatory compliance tracking.
+            </p>
+            <div class="accordion-chart">
+              <div class="chart-column">
+                <div class="chart-column-label">Portfolio visibility</div>
+                <div class="chart-column-bar">
+                  <div class="chart-column-fill" style="height: 35%;"></div>
+                </div>
+                <div class="chart-column-value">+35%</div>
+              </div>
+              <div class="chart-column">
+                <div class="chart-column-label">Reporting time saved</div>
+                <div class="chart-column-bar">
+                  <div class="chart-column-fill" style="height: 50%;"></div>
+                </div>
+                <div class="chart-column-value">-50%</div>
+              </div>
+              <div class="chart-column">
+                <div class="chart-column-label">Data accuracy</div>
+                <div class="chart-column-bar">
+                  <div class="chart-column-fill" style="height: 98%;"></div>
+                </div>
+                <div class="chart-column-value">98%</div>
+              </div>
+              <div class="chart-column">
+                <div class="chart-column-label">Compliance rate</div>
+                <div class="chart-column-bar">
+                  <div class="chart-column-fill" style="height: 100%;"></div>
+                </div>
+                <div class="chart-column-value">100%</div>
+              </div>
+            </div>
+            <div class="accordion-tags">
+              <span class="tag">ETL pipelines</span>
+              <span class="tag">A/B experiments</span>
+              <span class="tag">Regulatory reporting</span>
+              <span class="tag">Credit risk modeling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hidden Projects (Show More) -->
+      <div class="accordion-more-projects" style="display: none;">
+        <div class="accordion-item" id="project-5">
+          <div class="accordion-header">
+            <div class="accordion-left">
+              <div class="accordion-number">05</div>
+              <div class="accordion-info">
+                <div class="accordion-title">KARA: Child Welfare Case Analytics</div>
+                <div class="accordion-tech">SQL · Python · Tableau · Predictive Models</div>
+              </div>
+            </div>
+            <div class="accordion-metrics">
+              <div class="accordion-metric">
+                <div class="metric-value">30%</div>
+                <div class="metric-label">Better visibility</div>
+              </div>
+              <div class="accordion-metric">
+                <div class="metric-value">1M+</div>
+                <div class="metric-label">Records</div>
+              </div>
+              <div class="accordion-badge">Social Impact</div>
+            </div>
+            <div class="accordion-icon">▼</div>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              <p class="accordion-description">
+                Transformed 1M+ CPS records into dashboards and models that helped agencies prioritize high-risk cases and track outcomes. Built predictive models that improved triage accuracy by ~25% and streamlined ETL workflows.
+              </p>
+              <div class="accordion-chart">
+                <div class="chart-column">
+                  <div class="chart-column-label">Process visibility</div>
+                  <div class="chart-column-bar">
+                    <div class="chart-column-fill" style="height: 30%;"></div>
+                  </div>
+                  <div class="chart-column-value">+30%</div>
+                </div>
+                <div class="chart-column">
+                  <div class="chart-column-label">Triage accuracy</div>
+                  <div class="chart-column-bar">
+                    <div class="chart-column-fill" style="height: 25%;"></div>
+                  </div>
+                  <div class="chart-column-value">+25%</div>
+                </div>
+                <div class="chart-column">
+                  <div class="chart-column-label">Data refresh time</div>
+                  <div class="chart-column-bar">
+                    <div class="chart-column-fill" style="height: 40%;"></div>
+                  </div>
+                  <div class="chart-column-value">-40%</div>
+                </div>
+                <div class="chart-column">
+                  <div class="chart-column-label">Caseworker adoption</div>
+                  <div class="chart-column-bar">
+                    <div class="chart-column-fill" style="height: 80%;"></div>
+                  </div>
+                  <div class="chart-column-value">80%</div>
+                </div>
+              </div>
+              <div class="accordion-tags">
+                <span class="tag">Predictive analytics</span>
+                <span class="tag">Risk scoring</span>
+                <span class="tag">ETL optimization</span>
+                <span class="tag">Outcome tracking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" id="project-6">
+          <div class="accordion-header">
+            <div class="accordion-left">
+              <div class="accordion-number">06</div>
+              <div class="accordion-info">
+                <div class="accordion-title">HDFC Bank: Credit Risk Analysis</div>
+                <div class="accordion-tech">Python · SQL · dbt · GitHub</div>
+              </div>
+            </div>
+            <div class="accordion-metrics">
+              <div class="accordion-metric">
+                <div class="metric-value">22%</div>
+                <div class="metric-label">Profit boost</div>
+              </div>
+              <div class="accordion-metric">
+                <div class="metric-value">500K</div>
+                <div class="metric-label">Records</div>
+              </div>
+              <div class="accordion-badge">Banking</div>
+            </div>
+            <div class="accordion-icon">▼</div>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              <p class="accordion-description">
+                Analyzed 500K+ credit risk records boosting customer profitability by 22% through Python-based segmentation. Automated financial workflows optimizing reporting cycles by 40% using SQL, dbt and GitHub pipelines.
+              </p>
+              <div class="accordion-chart">
+                <div class="chart-column">
+                  <div class="chart-column-label">Customer profitability</div>
+                  <div class="chart-column-bar">
+                    <div class="chart-column-fill" style="height: 22%;"></div>
+                  </div>
+                  <div class="chart-column-value">+22%</div>
+                </div>
+                <div class="chart-column">
+                  <div class="chart-column-label">Workflow optimization</div>
+                  <div class="chart-column-bar">
+                    <div class="chart-column-fill" style="height: 40%;"></div>
+                  </div>
+                  <div class="chart-column-value">+40%</div>
+                </div>
+                <div class="chart-column">
+                  <div class="chart-column-label">Portfolio margins</div>
+                  <div class="chart-column-bar">
+                    <div class="chart-column-fill" style="height: 18%;"></div>
+                  </div>
+                  <div class="chart-column-value">+18%</div>
+                </div>
+                <div class="chart-column">
+                  <div class="chart-column-label">Fraud detection</div>
+                  <div class="chart-column-bar">
+                    <div class="chart-column-fill" style="height: 85%;"></div>
+                  </div>
+                  <div class="chart-column-value">85%</div>
+                </div>
+              </div>
+              <div class="accordion-tags">
+                <span class="tag">Credit risk modeling</span>
+                <span class="tag">Customer segmentation</span>
+                <span class="tag">Automated pipelines</span>
+                <span class="tag">Portfolio optimization</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" id="project-7">
+          <div class="accordion-header">
+            <div class="accordion-left">
+              <div class="accordion-number">07</div>
+              <div class="accordion-info">
+                <div class="accordion-title">Acute Bioscience: Inventory & Demand Analytics</div>
+                <div class="accordion-tech">MongoDB · Excel · R · Python</div>
+              </div>
+            </div>
+            <div class="accordion-metrics">
+              <div class="accordion-metric">
+                <div class="metric-value">25%</div>
+                <div class="metric-label">Forecast accuracy</div>
+              </div>
+              <div class="accordion-metric">
+                <div class="metric-value">50K</div>
+                <div class="metric-label">Transactions</div>
+              </div>
+              <div class="accordion-badge">Bioscience</div>
+            </div>
+            <div class="accordion-icon">▼</div>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              <p class="accordion-description">
+                Investigated 50K+ sales transactions enhancing reporting accuracy by 25% with MongoDB and Excel automation. Forecasted product demand cutting stockouts by 20% and service delays by 12% through R-based statistical modeling.
+              </p>
+              <div class="accordion-chart">
+                <div class="chart-column">
+                  <div class="chart-column-label">Demand forecast</div>
+                  <div class="chart-column-bar">
+                    <div class="chart-column-fill" style="height: 25%;"></div>
+                  </div>
+                  <div class="chart-column-value">+25%</div>
+                </div>
+                <div class="chart-column">
+                  <div class="chart-column-label">Stockout reduction</div>
+                  <div class="chart-column-bar">
+                    <div class="chart-column-fill" style="height: 20%;"></div>
+                  </div>
+                  <div class="chart-column-value">-20%</div>
+                </div>
+                <div class="chart-column">
+                  <div class="chart-column-label">Service delays</div>
+                  <div class="chart-column-bar">
+                    <div class="chart-column-fill" style="height: 12%;"></div>
+                  </div>
+                  <div class="chart-column-value">-12%</div>
+                </div>
+                <div class="chart-column">
+                  <div class="chart-column-label">Processing time</div>
+                  <div class="chart-column-bar">
+                    <div class="chart-column-fill" style="height: 30%;"></div>
+                  </div>
+                  <div class="chart-column-value">-30%</div>
+                </div>
+              </div>
+              <div class="accordion-tags">
+                <span class="tag">Demand forecasting</span>
+                <span class="tag">Inventory optimization</span>
+                <span class="tag">Statistical modeling</span>
+                <span class="tag">Compliance tracking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" id="project-8">
+          <div class="accordion-header">
+            <div class="accordion-left">
+              <div class="accordion-number">08</div>
+              <div class="accordion-info">
+                <div class="accordion-title">CAVO: AI Travel Safety Product Analytics</div>
+                <div class="accordion-tech">Excel · Power BI · Google Places API</div>
+              </div>
+            </div>
+            <div class="accordion-metrics">
+              <div class="accordion-metric">
+                <div class="metric-value">50%</div>
+                <div class="metric-label">Faster decisions</div>
+              </div>
+              <div class="accordion-metric">
+                <div class="metric-value">15+</div>
+                <div class="metric-label">Dashboards</div>
+              </div>
+              <div class="accordion-badge">AI Product</div>
+            </div>
+            <div class="accordion-icon">▼</div>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              <p class="accordion-description">
+                Lead analytics for CAVO, building KPI systems, multi-source dashboards, and documentation that support product and operations decisions. Built 15+ cross-team dashboards increasing decision-making speed by ~50%.
+              </p>
+              <div class="accordion-chart">
+                <div class="chart-column">
+                  <div class="chart-column-label">Decision speed</div>
+                  <div class="chart-column-bar">
+                    <div class="chart-column-fill" style="height: 50%;"></div>
+                  </div>
+                  <div class="chart-column-value">+50%</div>
+                </div>
+                <div class="chart-column">
+                  <div class="chart-column-label">Cross-team clarity</div>
+                  <div class="chart-column-bar">
+                    <div class="chart-column-fill" style="height: 40%;"></div>
+                  </div>
+                  <div class="chart-column-value">+40%</div>
+                </div>
+                <div class="chart-column">
+                  <div class="chart-column-label">Manual work saved</div>
+                  <div class="chart-column-bar">
+                    <div class="chart-column-fill" style="height: 45%;"></div>
+                  </div>
+                  <div class="chart-column-value">8-10h/wk</div>
+                </div>
+                <div class="chart-column">
+                  <div class="chart-column-label">Data sources</div>
+                  <div class="chart-column-bar">
+                    <div class="chart-column-fill" style="height: 50%;"></div>
+                  </div>
+                  <div class="chart-column-value">10+</div>
+                </div>
+              </div>
+              <div class="accordion-tags">
+                <span class="tag">KPI frameworks</span>
+                <span class="tag">Cross-functional dashboards</span>
+                <span class="tag">API integration</span>
+                <span class="tag">Product analytics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Show More Button -->
+      <button class="show-more-btn" id="showMoreBtn">
+        <span class="btn-text">Show More Projects</span>
+        <span class="btn-icon">▼</span>
+      </button>
+    </div>
+  </div>
+</section>
+      
+<!-- ========================================= EXPERIENCE & EDUCATION SECTION  =========================================== -->
+
+<section id="experience">
+  <div class="section-header">
+    <div>
+      <div class="section-title">Experience & Education</div>
+      <div class="section-subtitle">
+        Hover over any bar to see role details, achievements and technologies used
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Gantt Chart -->
+  <div class="gantt-final-container">
+    <!-- Legend -->
+    <div class="gantt-final-legend">
+      <div class="legend-item">
+        <div class="legend-dot education"></div>
+        <span>Education</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot experience"></div>
+        <span>Experience</span>
+      </div>
+    </div>
+
+    <!-- Chart Area -->
+    <div class="gantt-final-chart">
+      <!-- Year Headers -->
+      <div class="gantt-final-header">
+        <div class="year-col">2020</div>
+        <div class="year-col">2021</div>
+        <div class="year-col">2022</div>
+        <div class="year-col">2023</div>
+        <div class="year-col">2024</div>
+        <div class="year-col">2025</div>
+      </div>
+
+      <!-- Timeline Container -->
+      <div class="gantt-final-timeline">
+        
+        <!-- Bar 1: BS Info Tech (Sept 2020 - May 2023) -->
+        <!-- Start: Month 9/72 = 12.5% | Duration: 33 months = 45.8% -->
+        <div class="timeline-bar education" style="left: 12.5%; width: 45.8%;">
+          <span class="bar-label">BS in Information Technology</span>
+          <div class="bar-tooltip">
+            <div class="tooltip-title">BS in Information Technology</div>
+            <div class="tooltip-org">Mumbai University</div>
+            <div class="tooltip-date">Sept 2020 - May 2023</div>
+            <div class="tooltip-detail">GPA 3.70/4.0</div>
+          </div>
+        </div>
+
+        <!-- Bar 2: Acute Bio (Jun 2022 - Dec 2022) -->
+        <!-- Start: Month 30/72 = 41.7% | Duration: 7 months = 9.7% -->
+        <div class="timeline-bar experience small" style="left: 41.7%; width: 9.7%; top: 40px;">
+          <span class="bar-label">Acute Bioscience</span>
+          <div class="bar-tooltip">
+            <div class="tooltip-title">Data Analyst</div>
+            <div class="tooltip-org">Acute Bioscience · Life Sciences</div>
+            <div class="tooltip-date">Jun 2022 - Dec 2022</div>
+            <div class="tooltip-detail">50K+ transactions | ▲ 25% forecast accuracy | ▼ 20% stockouts</div>
+          </div>
+        </div>
+
+        <!-- Bar 3: HDFC Bank (Jan 2023 - Jun 2023) -->
+        <!-- Start: Month 37/72 = 51.4% | Duration: 6 months = 8.3% -->
+        <div class="timeline-bar experience small" style="left: 51.4%; width: 8.3%; top: 80px;">
+          <span class="bar-label">HDFC Bank</span>
+          <div class="bar-tooltip">
+            <div class="tooltip-title">Risk Analyst</div>
+            <div class="tooltip-org">HDFC Bank · India's Largest Private Bank</div>
+            <div class="tooltip-date">Jan 2023 - Jun 2023</div>
+            <div class="tooltip-detail">500K+ records | ▲ 22% profitability | ▲ 40% workflow optimization</div>
+          </div>
+        </div>
+
+        <!-- Bar 4: MS Analytics (Sept 2023 - May 2025) -->
+        <!-- Start: Month 45/72 = 62.5% | Duration: 21 months = 29.2% -->
+        <div class="timeline-bar education" style="left: 62.5%; width: 29.2%; top: 120px;">
+          <span class="bar-label">MS in Analytics</span>
+          <div class="bar-tooltip">
+            <div class="tooltip-title">Master of Science in Analytics</div>
+            <div class="tooltip-org">Northeastern University · Boston, MA</div>
+            <div class="tooltip-date">Sept 2023 - May 2025</div>
+            <div class="tooltip-detail">GPA 3.93/4.0 | CPS Scholars and Leader Award</div>
+          </div>
+        </div>
+
+        <!-- Bar 5: KARA (Apr 2024 - Jun 2024) -->
+        <!-- Start: Month 52/72 = 72.2% | Duration: 3 months = 4.2% -->
+        <div class="timeline-bar experience small" style="left: 72.2%; width: 4.2%; top: 160px;">
+          <span class="bar-label">KARA</span>
+          <div class="bar-tooltip">
+            <div class="tooltip-title">Data Analyst</div>
+            <div class="tooltip-org">KARA · Child Welfare Analytics</div>
+            <div class="tooltip-date">Apr 2024 - Jun 2024</div>
+            <div class="tooltip-detail">1M+ CPS records | 30+ visuals | ▲ 30% visibility | ▲ 25% triage accuracy</div>
+          </div>
+        </div>
+
+        <!-- Bar 6: BPHC (Jan 2025 - Mar 2025) -->
+        <!-- Start: Month 61/72 = 84.7% | Duration: 3 months = 4.2% -->
+        <div class="timeline-bar experience small" style="left: 84.7%; width: 4.2%; top: 200px;">
+          <span class="bar-label">BPHC</span>
+          <div class="bar-tooltip">
+            <div class="tooltip-title">Healthcare Data Analyst</div>
+            <div class="tooltip-org">Boston Public Health Commission</div>
+            <div class="tooltip-date">Jan 2025 - Mar 2025</div>
+            <div class="tooltip-detail">65K+ records | ▲ 25% targeting | ▲ 35% allocation efficiency</div>
+          </div>
+        </div>
+
+        <!-- Bar 7: CAVO (May 2025 - Present, estimate to Dec 2025) -->
+        <!-- Start: Month 65/72 = 90.3% | Duration: 7+ months = 9.7% -->
+        <div class="timeline-bar experience current small" style="left: 90.3%; width: 9.7%; top: 240px;">
+          <span class="bar-label">CAVO</span>
+          <div class="bar-tooltip">
+            <div class="tooltip-title">Product & Data Analyst</div>
+            <div class="tooltip-org">IpserLab (CAVO) · AI Travel-Safety Startup</div>
+            <div class="tooltip-date">May 2025 - Present</div>
+            <div class="tooltip-detail">15+ dashboards | ▲ 50% decision speed | ▲ 40% cross-team clarity</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================================================  SKILLS   =================================================== -->
+
+<section id="skills">
+  <div class="section-header">
+    <div>
+      <div class="section-title">Skills & Stack</div>
+      <div class="section-subtitle">
+        Core competencies, tools and expertise across analytics, AI and engineering
+      </div>
+    </div>
+    <span class="chip">10 Categories</span>
+  </div>
+
+  <!-- Skills Metric Cards Grid -->
+  <div class="skills-metrics-grid">
+    
+    <!-- Card 1: Machine Learning & AI -->
+    <div class="skill-metric-card">
+      <div class="skill-metric-header">
+        <div class="skill-metric-name">Machine Learning and AI</div>
+      </div>
+      <div class="skill-metric-bar">
+        <div class="skill-metric-fill" style="width: 90%;"></div>
+      </div>
+      <div class="skill-metric-percentage">
+        <span class="percentage-value">90%</span>
+        <span class="percentage-label">Proficiency</span>
+      </div>
+      
+      <div class="skill-metric-tools">
+        <span class="tool-tag">Scikit-learn</span>
+        <span class="tool-tag">TensorFlow</span>
+        <span class="tool-tag">PyTorch (Learning)</span>
+        <span class="tool-tag">XGBoost</span>
+        <span class="tool-tag">Random Forest</span>
+        <span class="tool-tag">Ensemble Models</span>
+      </div>
+    </div>
+
+    <!-- Card 2: NLP & GenAI -->
+    <div class="skill-metric-card">
+      <div class="skill-metric-header">
+        <div class="skill-metric-name">NLP and GenAI</div>
+      </div>
+      <div class="skill-metric-bar">
+        <div class="skill-metric-fill" style="width: 87%;"></div>
+      </div>
+      <div class="skill-metric-percentage">
+        <span class="percentage-value">87%</span>
+        <span class="percentage-label">Proficiency</span>
+      </div>
+      
+      <div class="skill-metric-tools">
+        <span class="tool-tag">Hugging Face Transformers</span>
+        <span class="tool-tag">BART/BERT/GPT</span>
+        <span class="tool-tag">LangChain</span>
+        <span class="tool-tag">FAISS</span>
+        <span class="tool-tag">Semantic Search</span>
+        <span class="tool-tag">LLM APIs</span>
+      </div>
+    </div>
+
+    <!-- Card 4: Programming & Development -->
+    <div class="skill-metric-card">
+      <div class="skill-metric-header">
+        <div class="skill-metric-name">Programming and Development</div>
+      </div>
+      <div class="skill-metric-bar">
+        <div class="skill-metric-fill" style="width: 94%;"></div>
+      </div>
+      <div class="skill-metric-percentage">
+        <span class="percentage-value">94%</span>
+        <span class="percentage-label">Proficiency</span>
+      </div>
+      
+      <div class="skill-metric-tools">
+        <span class="tool-tag">Python</span>
+        <span class="tool-tag">R</span>
+        <span class="tool-tag">SQL</span>
+        <span class="tool-tag">Pandas/NumPy</span>
+        <span class="tool-tag">Git/GitHub</span>
+        <span class="tool-tag">CI/CD</span>
+      </div>
+    </div>
 
 
-  <!-- Scripts -->
-  <link rel="stylesheet" href="https://unpkg.com/vis-network/styles/vis-network.min.css">
-  <script defer src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
-  
-  <script defer src="main.js"></script>
+    <!-- Card 2: Tools & Platforms -->
+    <div class="skill-metric-card">
+      <div class="skill-metric-header">
+        <div class="skill-metric-name">Tools and Platforms</div>
+       <!-- <div class="skill-metric-badge advanced">Advanced</div> -->
+      </div>
+      <div class="skill-metric-bar">
+        <div class="skill-metric-fill" style="width: 88%;"></div>
+      </div>
+      <div class="skill-metric-percentage">
+        <span class="percentage-value">88%</span>
+        <span class="percentage-label">Proficiency</span>
+      </div>
+      
+      <div class="skill-metric-tools">
+        <span class="tool-tag">Excel (Advanced)</span>
+        <span class="tool-tag">Streamlit</span>
+        <span class="tool-tag">APIs</span>
+        <span class="tool-tag">Google Places API</span>
+        <span class="tool-tag">MongoDB</span>
+        <span class="tool-tag">Git/GitHub</span>
+      </div>
+    </div>
+
+    <!-- Card 3: Business Intelligence & Dashboarding -->
+    <div class="skill-metric-card">
+      <div class="skill-metric-header">
+        <div class="skill-metric-name">Business Intelligence and Dashboarding</div>
+        <!--<div class="skill-metric-badge expert">Expert</div>-->
+      </div>
+      <div class="skill-metric-bar">
+        <div class="skill-metric-fill" style="width: 91%;"></div>
+      </div>
+      <div class="skill-metric-percentage">
+        <span class="percentage-value">91%</span>
+        <span class="percentage-label">Proficiency</span>
+      </div>
+      
+      <div class="skill-metric-tools">
+        <span class="tool-tag">Power BI</span>
+        <span class="tool-tag">Tableau</span>
+        <span class="tool-tag">Looker Studio</span>
+        <span class="tool-tag">DAX</span>
+        <span class="tool-tag">Dashboard Design</span>
+        <span class="tool-tag">KPI Frameworks</span>
+      </div>
+    </div>
+
+    <!-- Card 4: Data Visualization -->
+    <div class="skill-metric-card">
+      <div class="skill-metric-header">
+        <div class="skill-metric-name">Data Visualization</div>
+        <!--<div class="skill-metric-badge expert">Expert</div>-->
+      </div>
+      <div class="skill-metric-bar">
+        <div class="skill-metric-fill" style="width: 90%;"></div>
+      </div>
+      <div class="skill-metric-percentage">
+        <span class="percentage-value">90%</span>
+        <span class="percentage-label">Proficiency</span>
+      </div>
+      
+      <div class="skill-metric-tools">
+        <span class="tool-tag">Matplotlib</span>
+        <span class="tool-tag">Seaborn</span>
+        <span class="tool-tag">Plotly</span>
+        <span class="tool-tag">Power BI Visuals</span>
+        <span class="tool-tag">Tableau Charts</span>
+        <span class="tool-tag">Data Storytelling</span>
+      </div>
+    </div>
+
+    <!-- Card 5: Statistical Analysis & Forecasting -->
+    <div class="skill-metric-card">
+      <div class="skill-metric-header">
+        <div class="skill-metric-name">Statistical Analysis and Forecasting</div>
+        <!--<div class="skill-metric-badge advanced">Advanced</div>-->
+      </div>
+      <div class="skill-metric-bar">
+        <div class="skill-metric-fill" style="width: 87%;"></div>
+      </div>
+      <div class="skill-metric-percentage">
+        <span class="percentage-value">87%</span>
+        <span class="percentage-label">Proficiency</span>
+      </div>
+      
+      <div class="skill-metric-tools">
+        <span class="tool-tag">SARIMA Forecasting</span>
+        <span class="tool-tag">Time Series</span>
+        <span class="tool-tag">Predictive Modeling</span>
+        <span class="tool-tag">Regression</span>
+        <span class="tool-tag">A/B Testing</span>
+        <span class="tool-tag">Hypothesis Testing</span>
+      </div>
+    </div>
+
+    <!-- Card 6: Data Engineering & ETL -->
+    <div class="skill-metric-card">
+      <div class="skill-metric-header">
+        <div class="skill-metric-name">Data Engineering and ETL</div>
+       <!-- <div class="skill-metric-badge advanced">Advanced</div> -->
+      </div>
+      <div class="skill-metric-bar">
+        <div class="skill-metric-fill" style="width: 85%;"></div>
+      </div>
+      <div class="skill-metric-percentage">
+        <span class="percentage-value">85%</span>
+        <span class="percentage-label">Proficiency</span>
+      </div>
+    
+      <div class="skill-metric-tools">
+        <span class="tool-tag">ETL Pipelines</span>
+        <span class="tool-tag">PostgreSQL</span>
+        <span class="tool-tag">MongoDB</span>
+        <span class="tool-tag">SQL Optimization</span>
+        <span class="tool-tag">dbt</span>
+        <span class="tool-tag">Power Query</span>
+      </div>
+    </div>
+
+    <!-- Card 8: Specialized Analytics -->
+    <div class="skill-metric-card">
+      <div class="skill-metric-header">
+        <div class="skill-metric-name">Specialized Analytics</div>
+        <!--<div class="skill-metric-badge advanced">Advanced</div>-->
+      </div>
+      <div class="skill-metric-bar">
+        <div class="skill-metric-fill" style="width: 83%;"></div>
+      </div>
+      <div class="skill-metric-percentage">
+        <span class="percentage-value">83%</span>
+        <span class="percentage-label">Proficiency</span>
+      </div>
+      
+      <div class="skill-metric-tools">
+        <span class="tool-tag">Geospatial (ArcGIS)</span>
+        <span class="tool-tag">Healthcare Analytics</span>
+        <span class="tool-tag">Risk Analytics</span>
+        <span class="tool-tag">Equity Analysis</span>
+        <span class="tool-tag">Compliance</span>
+      </div>
+    </div>
+
+    <!-- Card 9: Soft Skills & Collaboration -->
+    <div class="skill-metric-card">
+      <div class="skill-metric-header">
+        <div class="skill-metric-name">Soft Skills and Collaboration</div>
+        <!--<div class="skill-metric-badge expert">Expert</div>-->
+      </div>
+      <div class="skill-metric-bar">
+        <div class="skill-metric-fill" style="width: 89%;"></div>
+      </div>
+      <div class="skill-metric-percentage">
+        <span class="percentage-value">89%</span>
+        <span class="percentage-label">Proficiency</span>
+      </div>
+      
+      <div class="skill-metric-tools">
+        <span class="tool-tag">Stakeholder Communication</span>
+        <span class="tool-tag">Data Storytelling</span>
+        <span class="tool-tag">Problem Structuring</span>
+        <span class="tool-tag">Cross-functional Collab</span>
+        <span class="tool-tag">Presentations</span>
+      </div>
+    </div>
+
+    <!-- Card 10: Domain Expertise -->
+    <div class="skill-metric-card">
+      <div class="skill-metric-header">
+        <div class="skill-metric-name">Domain Expertise</div>
+        <!--<div class="skill-metric-badge advanced">Advanced</div>-->
+      </div>
+      <div class="skill-metric-bar">
+        <div class="skill-metric-fill" style="width: 86%;"></div>
+      </div>
+      <div class="skill-metric-percentage">
+        <span class="percentage-value">86%</span>
+        <span class="percentage-label">Proficiency</span>
+      </div>
+      
+      <div class="skill-metric-tools">
+        <span class="tool-tag">Healthcare</span>
+        <span class="tool-tag">Public Health</span>
+        <span class="tool-tag">Finance & Banking</span>
+        <span class="tool-tag">Supply Chain</span>
+        <span class="tool-tag">AI Products</span>
+        <span class="tool-tag">Social Impact</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =======================================  QUIET ARANYA LAB   ====================================================== -->
+
+<!--<section id="lab">
+  <div class="section-header">
+    <div>
+      <div class="section-title">Quiet Aranya Lab</div>
+      <div class="section-subtitle">
+        Where psychology, data, and product experiments live.
+      </div>
+    </div>
+    <span class="chip">Coming Soon</span>
+  </div>
+
+
+  <div class="coming-soon-container">
+    <div class="coming-soon-icon">🧪</div>
+    <h3 class="coming-soon-title">Building Something Calm & Intentional</h3>
+    <p class="coming-soon-description">
+      Quiet Aranya is my long-term project: a web app that helps people move from 
+      self-help overload to self-understanding using data, reflection and gentle structure. 
+      Think of it as a "second brain" for personal growth where insights from books, 
+      experiences and patterns converge into clarity.
+    </p>
+    <p class="coming-soon-description">
+      Currently in the research and design phase, exploring how to combine behavioral 
+      psychology, data analytics, and intuitive product design to create tools that 
+      actually help people understand themselves better.
+    </p>
+    <div class="coming-soon-status">
+      <div class="status-item">
+        <div class="status-icon">🔬</div>
+        <div class="status-text">Research & Exploration</div>
+      </div>
+      <div class="status-item">
+        <div class="status-icon">💡</div>
+        <div class="status-text">Concept Development</div>
+      </div>
+      <div class="status-item">
+        <div class="status-icon">🎨</div>
+        <div class="status-text">Early Prototyping</div>
+      </div>
+    </div>
+    <div class="coming-soon-note">
+      This section will evolve as the project develops. Check back soon for updates!
+    </div>
+  </div>
+</section>
+-->
+
+<!-- ===================================================== TESTIMONIALS   ===================================================== -->
+
+<section id="testimonials">
+  <div class="section-header">
+    <div>
+      <div class="section-title">What People Say</div>
+      <!--<div class="section-subtitle">
+        Recommendations from colleagues, managers, and partners I've worked with.
+      </div> -->
+    </div>
+  </div>
+
+  <!-- Large Featured Carousel -->
+  <div class="testimonial-carousel-container">
+    <div class="testimonial-carousel">
+      
+      <!-- Testimonial 1 -->
+      <div class="carousel-slide active">
+        <div class="carousel-quote-mark">"</div>
+        <p class="carousel-quote">
+          If I could describe Purva in one word it would be: courage. When we first worked together, she was afraid of putting herself 
+          out there, preventing others to hear her valuable input. I noticed this has impacted the way she conducted herself at events 
+          and online. Maybe this fear of sharing her voice could've gotten worse. Since working professionally together, I discovered a 
+          huge shift. In only about 2 short months, Purva now offers help with complex data analytics projects to strangers online, 
+          attends in-person tech events with 1000+ of people to uplift other leaders, posts on Linkedin about her deep expertise, 
+          and evangelizes this knowledge on data analytics in healthcare domains to online communities with 300+ people in it. 
+          Her willingness to change demonstrates true grit, leadership, and talent. In spite of her natural personality being more 
+          introverted, she does it anyways. I can only begin to imagine how this courage translates to the workplace. Ultimately, 
+          Purva has proved herself countless times that despite her challenging circumstances, she can do anything. I heartily endorse 
+          Purva for any professional endeavor she pursues. Please contact me if you have any questions about having her as a teammate. 
+        </p>
+        <div class="carousel-author">
+          <div class="carousel-avatar">AP</div>
+          <div class="carousel-author-info">
+            <div class="carousel-author-name">Abigayle Peterson</div>
+            <div class="carousel-author-role">Mentor</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="carousel-slide">
+        <div class="carousel-quote-mark">"</div>
+        <p class="carousel-quote">
+          As a Product Manager Intern and now a Product Analyst for IpserLab(Team 7), Purva led task management for the Prompt 
+          Engineering team and coordinated across Product, Frontend, Backend, and Analytics. As a Data Analyst, she built the unified 
+          MVP dashboard, designing each team’s main data sheets, task trackers, and summary dashboards to centralize progress from all 
+          five teams in one place.        
+        </p>
+        <div class="carousel-author">
+          <div class="carousel-avatar">EI</div>
+          <div class="carousel-author-info">
+            <div class="carousel-author-name">Edward Ipser</div>
+            <div class="carousel-author-role">President • IpserLab</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="carousel-slide">
+        <div class="carousel-quote-mark">"</div>
+        <p class="carousel-quote">
+          I had the opportunity to work closely with Purva during our startup journey, and her impact was visible across multiple 
+          dimensions of product execution. From the very beginning, she contributed to critical MVP scope discussions and product 
+          setup sessions, ensuring that our early decisions were grounded in data and aligned with the long-term strategy. As a Product 
+          Analyst, she didn’t just analyze; she shaped strategy with clarity and precision. Purva took ownership of managing the Prompt 
+          Engineering and Analytics teams, balancing technical depth with strong leadership. Her ability to coordinate cross-functional 
+          efforts meant our teams moved faster and with fewer bottlenecks. She also built comprehensive dashboards that tracked KPIs, 
+          sprint velocity, and task progress, which became the single source of truth for leadership and helped improve sprint delivery 
+          rates by over 25%. Beyond technical contributions, Purva consistently stepped up to take on new challenges, communicated 
+          effectively across stakeholders, and fostered a collaborative environment where team members felt supported and motivated. 
+          Her combination of strategic thinking, operational rigor, and people-first leadership made her an essential part of our product
+          team. Any team would benefit from her blend of product insight, analytical sharpness, and execution excellence.
+        </p>
+        <div class="carousel-author">
+          <div class="carousel-avatar">SS</div>
+          <div class="carousel-author-info">
+            <div class="carousel-author-name">Sunny Soni</div>
+            <div class="carousel-author-role">Lead Manager • IpserLab</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="carousel-slide">
+        <div class="carousel-quote-mark">"</div>
+        <p class="carousel-quote">
+          I collaborated with Purva as part of a student panel at Northeastern University. She showcased her analytical, design and 
+          technological skills impressively. Purva is very detail oriented, an excellent communicator and very reliable. Our student 
+          panel researched, analyzed and presented 3 high performing digital portfolio applications to a panel of faculty, professors 
+          and administrators at Northeastern University. Our feedback and analysis greatly influenced their support for a digital 
+          portfolio license for Northeastern students. Purva would be an excellent addition to any team. I highly recommend hiring her!        </p>
+        <div class="carousel-author">
+          <div class="carousel-avatar">RM</div>
+          <div class="carousel-author-info">
+            <div class="carousel-author-name">Rebecca Mitchell</div>
+            <div class="carousel-author-role">Project Colleague • Workgroup</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 5 -->
+      <div class="carousel-slide">
+        <div class="carousel-quote-mark">"</div>
+        <p class="carousel-quote">
+          I had the pleasure of working with Purva during her time at HDFC Bank, where she made a significant impact on our operations. 
+          She developed interactive dashboards that monitored over 500K customer accounts and successfully reduced our review cycles by 
+          50% that benefited the entire team. She also automated our complex workflows, saving us several hours each week while 
+          maintaining the compliance standards we needed.Purva knows her way around SQL, Tableau, and automation tools, and it showed in 
+          everything she delivered. Her work was always solid and dependable, especially in dealing with large and complex data.But what 
+          I remember most about working with Purva wasn't just her technical skills—it was how easy she was to work with. She communicates 
+          clearly, rolls with whatever curveballs come our way, and has this natural problem-solving instinct that makes projects flow 
+          better. She's the type of person who pays attention to the details, steps up when something needs to get done, and you know 
+          you can count on her. Any team would be lucky to have her.
+        </p>
+        <div class="carousel-author">
+          <div class="carousel-avatar">SG</div>
+          <div class="carousel-author-info">
+            <div class="carousel-author-name">Swapnil Ghuge</div>
+            <div class="carousel-author-role">Senior Manager • HDFC Bank</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="carousel-controls">
+      <button class="carousel-btn prev" id="prevTestimonial">
+        <span>←</span>
+      </button>
+      <div class="carousel-indicators">
+        <div class="indicator active" data-slide="0"></div>
+        <div class="indicator" data-slide="1"></div>
+        <div class="indicator" data-slide="2"></div>
+        <div class="indicator" data-slide="3"></div>
+        <div class="indicator" data-slide="4"></div>
+      </div>
+      <button class="carousel-btn next" id="nextTestimonial">
+        <span>→</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================  CONTACT   ================================================ -->
+
+<section id="contact">
+  <!-- Availability Status Dashboard -->
+  <div class="contact-availability-container">
+    
+    <!-- Status Badge -->
+    <div class="contact-availability-badge">
+      <div class="availability-pulse"></div>
+      <span>Available for Opportunities</span>
+    </div>
+
+    <!-- Main Title -->
+    <h2 class="contact-availability-title">Drop me a Message for</h2>
+    
+    <!-- Description -->
+    <p class="contact-availability-subtitle">
+      Collaboration | Hiring | Project Work
+    </p>
+
+    <!-- Contact Buttons -->
+    <div class="contact-cta-buttons">
+      <a href="https://linkedin.com/in/purva-prakash-kekan" target="_blank" rel="noopener noreferrer" class="contact-btn secondary">
+        <span class="btn-icon">🔗</span>
+        <span>LinkedIn</span>
+      </a>
+      <a href="mailto:purvakekan3@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-btn secondary">
+        <span class="btn-icon">✉️</span>
+        <span>Email</span>
+      </a>
+    </div>
+
+    <!-- Availability Info -->
+    <div class="contact-availability-grid">
+      <div class="contact-availability-item">
+        <span class="availability-icon">📍</span>
+        <span>Boston, MA | USA </span>
+      </div>
+  </div>
+</section>
+</main>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
