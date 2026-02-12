@@ -1316,6 +1316,12 @@ section + section {
   line-height: 1.6;
 }
 
+.tooltip-tech {
+  font-size: 0.74rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
 /* Timeline Stats 
 .timeline-stats {
   display: grid;
@@ -1549,7 +1555,7 @@ section + section {
   overflow: hidden;
   border: 1px solid rgba(31, 41, 55, 0.95);
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .skill-metric-fill {
@@ -1558,6 +1564,7 @@ section + section {
   border-radius: 999px;
   position: relative;
   transition: width 1s ease;
+  z-index: 2;
 }
 
 /* Shimmer effect on the bar */
@@ -1594,7 +1601,7 @@ section + section {
   
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
+  align-content: flex-start;
   justify-content: center;
   gap: 6px;
   padding: 20px;
@@ -1607,17 +1614,45 @@ section + section {
   /* Hidden by default */
   opacity: 0;
   visibility: hidden;
-  
+  pointer-events: none;
+
   /* Smooth transition */
   transition: opacity 0.3s ease, visibility 0.3s ease;
   
   z-index: 10;
+
+    overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 100%; /* Constrain to card height */
 }
+
+/* Optional: Style the scrollbar */
+.skill-metric-tools::-webkit-scrollbar {
+  width: 6px;
+}
+
+.skill-metric-tools::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.5);
+  border-radius: 3px;
+}
+
+.skill-metric-tools::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.5);
+  border-radius: 3px;
+}
+
+.skill-metric-tools::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 189, 248, 0.7);
+}
+
+
+
 
 /* Show tooltip overlay on card hover */
 .skill-metric-card:hover .skill-metric-tools {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
+
 }
 
 /* Tool Tag Styling */
@@ -1637,6 +1672,8 @@ section + section {
   border-color: #38bdf8;
   transform: scale(1.05);
 }
+
+
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 1200px) {
@@ -1825,10 +1862,6 @@ section + section {
 
 /* ==================================================  Testimonials   ================================================ */
 
-/* ============================================================
-   COMPLETE TESTIMONIALS SECTION CSS - FIXED HEIGHT VERSION
-   DELETE ALL OLD TESTIMONIAL CSS AND REPLACE WITH THIS
-   ============================================================ */
 
 /* Testimonial Carousel Container */
 .testimonial-carousel-container {
