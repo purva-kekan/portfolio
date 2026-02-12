@@ -1,35 +1,65 @@
-# 🌐 Purva Prakash Kekan – Digital Portfolio  
+# 🌐 Purva Kekan – AI & Data Engineering Portfolio
 
-Welcome to my personal digital portfolio! 🚀  
-This portfolio showcases my **projects, skills, and experience** as a Data Analyst specializing in **public health, mental health, and equity-driven analytics**.  
+Welcome to my digital portfolio! 🚀
+
+This repository showcases my journey building **end-to-end data and ML pipelines**, from raw data ingestion to deployed models and decision-support systems, with a focus on healthcare, travel/mobility and financial analytics.
 
 🔗 **Live Portfolio:** [purva-kekan.github.io/portfolio](https://purva-kekan.github.io/portfolio)  
-
-📧 **Email:** [purvakekan3@gmail.com](mailto:purvakekan3@gmail.com)  | 📫 [LinkedIn](https://www.linkedin.com/in/purva-prakash-kekan/)  
-
----
-
-## 📌 About This Portfolio  
-
-This portfolio is built to highlight my journey as a **Data Analyst** with a focus in **Public Health and Mental Health Sectors**
-It combines **projects, dashboards, and storytelling** to demonstrate how I use **data, technology, and design** to uncover insights and drive meaningful outcomes.  
+📧 **Email:** [purvakekan3@gmail.com](mailto:purvakekan3@gmail.com) | 📫 [LinkedIn](https://www.linkedin.com/in/purva-kekan/)
 
 ---
 
-## ✨ A little more about me
-🔍 I specialize in **geospatial dashboards, forecasting models, and NLP analytics**  
-📌 I’ve worked on projects like **Boston 311 Syringe Requests Dashboard** (geospatial + predictive modeling), 
-**Atomic Habits NLP Concept Graph** (semantic networks), and **Respiratory Mortality Forecasting** (FastAPI + ML).  
-🌍 I believe data storytelling can help address **real-world equity challenges** in healthcare and community outcomes.  
-🎨 Outside of analytics, I enjoy **dance, design, and blending creativity with data**.  
+## 📌 About This Portfolio
+
+This portfolio highlights my work as an **AI Analyst and Data Engineer**, combining Python-based ML pipelines, SQL data transformation, and dashboard design to turn complex operational data into production-ready analytics and AI features.
+
+### ✨ What I Build
+
+🔧 **Data & ML Pipelines:** Multi-source data cleaning, feature engineering, model training, and API deployment using Python, SQL, dbt and FastAPI  
+🤖 **AI & NLP Systems:** Predictive models, time series forecasting, recommendation systems, and LLM-powered applications for real-world use cases  
+📊 **Analytics Infrastructure:** Dashboards, KPIs, and geospatial analytics to support product teams, clinical operations and business intelligence  
+🚀 **MLOps Foundations:** Containerized deployments (Docker), experiment tracking, CI/CD for models and monitoring workflows  
+
+### 🎯 Domains I Focus On
+
+- **Healthcare & Public Health:** Forecasting mortality, resource allocation, population health analytics  
+- **Travel & Mobility:** Trip recommendation features, safety metrics, multi-source data integration for AI-powered planning  
+- **Financial Services:** Risk, compliance and customer analytics with SQL-based ETL and BI reporting  
 
 ---
 
-## 🤝 Let’s Connect  
+## 🧰 Core Technical Stack
+
+**Languages & Frameworks:** Python (Pandas, NumPy, Scikit-learn, TensorFlow), SQL, FastAPI, dbt  
+**ML & AI:** Time series modeling (Prophet, SARIMA), NLP (spaCy, embeddings, TF-IDF), supervised learning, recommendation systems  
+**Data Engineering:** ETL/ELT pipelines, data modeling, REST APIs, batch processing, GitHub Actions automation  
+**MLOps & Deployment:** Docker, FastAPI services, model monitoring, experiment tracking, cloud deployment (AWS basics)  
+**Analytics & Viz:** Power BI, Tableau, ArcGIS, Jupyter, Excel advanced functions  
+
+---
+
+## 💡 Featured Projects
+
+### 🏥 **Healthcare Geospatial Analytics**
+Built an end-to-end data pipeline and Power BI dashboard analyzing Boston 311 service data combined with health signals to identify underserved neighborhoods and support resource planning decisions.  
+**Tech:** Python, SQL, ArcGIS, Power BI, geospatial analysis
+
+### 🧠 **Atomic Habits NLP + GenAI App**
+Developed an interactive NLP application using Hugging Face LLMs, spaCy, and TF-IDF clustering to extract and visualize 50+ behavioral patterns from "Atomic Habits" in a semantic network graph.  
+**Tech:** Python, spaCy, Hugging Face, NetworkX, Streamlit
+
+### 🫁 **Respiratory Mortality ML System**
+Designed a production-style ML pipeline on 200K+ CDC records using Prophet, LSTM, and geospatial features to forecast respiratory mortality risk and surface city-level hotspots, exposed via FastAPI service.  
+**Tech:** Python, Prophet, LSTM, FastAPI, Docker, geospatial features
+
+---
+
+## 🤝 Let's Connect
+
+I'm actively seeking **AI Engineer, Data Engineer, and ML-focused Data Analyst roles** where I can build scalable data systems, deploy ML models, and bridge the gap between raw data and production AI features.
 
 📧 [purvakekan3@gmail.com](mailto:purvakekan3@gmail.com)  
+📫 [LinkedIn – Purva Kekan](https://www.linkedin.com/in/purva-kekan/)  
+👩🏻‍💻 [Portfolio Website](https://purva-kekan.github.io/portfolio/)
 
-📫 [LinkedIn – Purva Prakash Kekan](https://www.linkedin.com/in/purva-prakash-kekan/)  
-
-👩🏻‍💻 [Portfolio Website](https://purva-kekan.github.io/portfolio/)  
-
+*Building data and AI systems from prototype to production.*
